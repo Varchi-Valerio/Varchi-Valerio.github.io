@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animazione albero di Natale</title>
+  <style>
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Animazione albero di Natale</h1>
+  
+  <p>Guarda come le palline dell'albero di Natale si alternano ogni 0,2 secondi!</p>
+
+  <img src="https://varchi-valerio.github.io/webbin.png" id="albero1">
+  <img src="https://just1click.it/img/logo-1660906026.jpg" id="albero2" style="display:none;">
+
+  <script>
+    let img1 = document.getElementById("albero1");
+    let img2 = document.getElementById("albero2");
+    let timeout = 200;
+    let show = true;
+    
+    setInterval(function(){
+      if(show){
+        img1.style.display = "none";
+        img2.style.display = "block";
+      }
+      else {
+        img1.style.display = "block";
+        img2.style.display = "none";
+      }
+      show = !show;
+    }, timeout);
+  </script>
+</body>
+</html>
