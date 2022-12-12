@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zindex ex</title>
+</head>
+<style>
+    .wrapper {
+        position: relative;
+    }
+
+    .dashed-box {
+        position: relative;
+        z-index: 1;
+        border: dashed;
+        height: 8em;
+        margin-bottom: 1em;
+        margin-top: 2em;
+    }
+
+    .gold-box {
+        position: absolute;
+        z-index: 3;
+        /* put .gold-box above .green-box and .dashed-box */
+        background: gold;
+        width: 80%;
+        left: 60px;
+        top: 3em;
+    }
+
+    .green-box {
+        position: absolute;
+        z-index: 2;
+        /* put .green-box above .dashed-box */
+        background: lightgreen;
+        width: 20%;
+        left: 65%;
+        top: -25px;
+        height: 7em;
+        opacity: 0.9;
+    }
+
+    .varchi-box{
+        position: absolute;
+        z-index: 1,5;
+        /* put .green-box above .dashed-box */
+        background: rgb(167, 59, 140);
+        width: 40%;
+        left: 55%;
+        top: -35px;
+        height: 6em;
+        opacity: 0.6;
+    }
+</style>
+<!-- TODO mettere un quarto box sotto al green-box-->
+<body>
+    <div class="wrapper">
+        <div class="dashed-box">Dashed box</div>
+        <div class="gold-box">Gold box</div>
+        <div class="green-box">Green box</div>
+        <div class="varchi-box">Varchi box</div>
+    </div>
+</body>
+
+</html>
