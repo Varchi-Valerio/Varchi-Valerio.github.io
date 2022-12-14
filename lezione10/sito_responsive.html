@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,16 @@
     <title>Sito responsive</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
     <!--
         Creare un sito vetrina con grid che preferite 
-            header con logo
-            nav bar con 3 link almeno
+            header con logo GABRIELE
+            nav bar con 3 link almeno ALESSIA
             un content\main home page con una serie box (immagini e testi -> Titolo con un font più grande non sottolineato e cliccabile che porta a una pagina singola)
-            footer
+            - flex box articoli ANTONIO
+            - un contenitore a tre colonne con grid RICCARDO
+            footer VALERIO
             Seconda 
             - sito sia responsive con immagine tagliate o ridotte ad hoc
             IphoneSe 375 max
@@ -21,5 +25,169 @@
             Desktop maggiori
             - mettere i media query
     -->
+    <div class="container">
+        <header>
+            <h1>Il mio sito di vendita online</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/features">Chi siamo</a></li>
+                    <li><a href="/pricing">Dove siamo</a></li>
+                    <li class="nav-right">
+                        <a href="/about">Contatti</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="banner">
+                <!-- pubblicità -->
+            </div>
+        </header>
+
+
+        <main>
+            <section>
+                <h2>Ultime notizie</h2>
+                <div class="articles">
+                    <article>
+                        <img src="https://via.placeholder.com/300" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://via.placeholder.com/300" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://via.placeholder.com/400" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- mettere almeno due pubblicità quadrate-->
+
+                    <aside class="centergrid">
+                        <!-- GRID con tre elementi-->
+                        <h1>Team collaboration done right</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus euismod dapibus. Aliquam erat
+                volutpat. Nam sed rhoncus diam. Vestibulum nisl leo, dignissim non placerat ac, fermentum non leo. Morbi
+                lacinia dui ut lacinia hendrerit. Ut rutrum odio id mauris laoreet condimentum. Nullam leo purus,
+                interdum vel accumsan at, egestas ac tortor.</p>
+
+                <h1>Team collaboration done right</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus euismod dapibus. Aliquam erat
+                volutpat. Nam sed rhoncus diam. Vestibulum nisl leo, dignissim non placerat ac, fermentum non leo. Morbi
+                lacinia dui ut lacinia hendrerit. Ut rutrum odio id mauris laoreet condimentum. Nullam leo purus,
+                interdum vel accumsan at, egestas ac tortor.</p>
+
+                <h1>Team collaboration done right</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus euismod dapibus. Aliquam erat
+                volutpat. Nam sed rhoncus diam. Vestibulum nisl leo, dignissim non placerat ac, fermentum non leo. Morbi
+                lacinia dui ut lacinia hendrerit. Ut rutrum odio id mauris laoreet condimentum. Nullam leo purus,
+                interdum vel accumsan at, egestas ac tortor.</p>
+                    </aside>
+
+                    <article>
+                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="https://via.placeholder.com/600x250" alt="img1" class="media-image">
+                        <div class="article-body">
+                            <h4>Lorem ipsum</h4>
+                            <p>
+                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
+                                natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
+                                lorem.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="/">Copyright ecc</a></li>
+                    <li><a href="/features">xxxx</a></li>
+                    <li><a href="/pricing">yyyy</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
 </body>
+
 </html>
