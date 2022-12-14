@@ -1,0 +1,13 @@
+figure figcaption {
+    margin: 0;
+    padding: .3em .8em;
+    text-align: right;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    }
+    
+    figure {
+    display: inline-block;
+    max-width: 300px;
+    margin: 0;
+    }
