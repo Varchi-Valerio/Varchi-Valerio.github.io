@@ -41,6 +41,8 @@ main {
     border-radius: 5px;
 }
 
+
+
 article {
     background-color: #dedede;
     padding: 1.5em;
@@ -68,4 +70,15 @@ section::after {
 .centergrid {
     background-color: blueviolet;
     display: inline-flex;
+}
+
+.foote-nav {
+    background-color: blueviolet;
+    padding: 1.5em;
+    color: rgb(14, 13, 13);
+    text-align: center;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
