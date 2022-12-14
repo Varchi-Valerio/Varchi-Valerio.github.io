@@ -1,31 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sito responsive</title>
     <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-    <footer>
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="/">Copyright 2020 - Il mio sito di vendita online</a></li>
-                <li><a href="/features">Termini e condizioni</a></li>
-                <li><a href="/pricing">Privacy Policy</a></li>
-                <li><a href="/about">Informazioni legali</a></li>
-                <li><a href="/">Seguici sui nostri canali social</a></li>
-                <li><a href="/features">Facebook</a></li>
-                <li><a href="/pricing">Instagram</a></li>
-                <li><a href="/about">Twitter</a></li>
-                <li><a href="/">Pinterest</a></li>
-                <li><a href="/features">Home</a></li>
-                <li><a href="/pricing">Chi siamo</a></li>
-                <li><a href="/about">Dove siamo</a></li>
-                <li><a href="/">Contatti</a>
-            </ul>
+  </head>
+
+  <body>
+    <!--
+        Creare un sito vetrina con grid che preferite 
+            header con logo GABRIELE
+            nav bar con 3 link almeno ALESSIA
+            un content\main home page con una serie box (immagini e testi -> Titolo con un font più grande non sottolineato e cliccabile che porta a una pagina singola)
+            - flex box articoli ANTONIO
+            - un contenitore a tre colonne con grid RICCARDO
+            footer VALERIO
+            Seconda 
+            - sito sia responsive con immagine tagliate o ridotte ad hoc
+            IphoneSe 375 max
+            iPad Mini 768x1024
+            Desktop maggiori
+            - mettere i media query
+    -->
+    <div class="container">
+      <header>
+        <img src="assets/banner.png" alt="Il corriere dei web developer"/>
+        <h2>Mercoledì 14 dicembre</h2>
+        <h3>I nostri SOCIAL:</h3>
+        <a href="https://www.instagram.com/"><img src="assets/instalogo.jpg" width="40px"/></a>
+        <a href="https://www.facebook.com/"><img src="assets/facebooklogo.png" width="40px"/></a>
+        <a href="https://www.twitter.com/"><img src="assets/twitterlogo.png" width="40px"/></a>
+        <nav>
+          <ul class="header-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/features">Chi siamo</a></li>
+            <li><a href="/pricing">Dove siamo</a></li>
+            <li class="nav-right">
+              <a href="/about">Contatti</a>
+            </li>
+          </ul>
         </nav>
-    </footer>
-</body>
+        <div class="banner">
+          <!-- pubblicità -->
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <h2>Ultime notizie</h2>
+          <div class="articles">
+            <article>
+              <img
+                src="https://via.placeholder.com/300"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://via.placeholder.com/300"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://via.placeholder.com/400"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+
+            <!-- mettere almeno due pubblicità quadrate-->
+
+            <aside class="centergrid">
+              <div class ="first">
+                <!-- GRID con tre elementi-->
+                <h1>Team collaboration done right</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                  maximus euismod dapibus. Aliquam erat volutpat. Nam sed
+                  rhoncus diam. Vestibulum nisl leo, dignissim non placerat ac,
+                  fermentum non leo. Morbi lacinia dui ut lacinia hendrerit. Ut
+                  rutrum odio id mauris laoreet condimentum. Nullam leo purus,
+                  interdum vel accumsan at, egestas ac tortor.
+                </p>
+              </div>
+
+              <div class="second">
+                <h1>Team collaboration done right</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                  maximus euismod dapibus. Aliquam erat volutpat. Nam sed
+                  rhoncus diam. Vestibulum nisl leo, dignissim non placerat ac,
+                  fermentum non leo. Morbi lacinia dui ut lacinia hendrerit. Ut
+                  rutrum odio id mauris laoreet condimentum. Nullam leo purus,
+                  interdum vel accumsan at, egestas ac tortor.
+                </p>
+              </div>
+
+              <div class="third">
+                <h1>Team collaboration done right</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                  maximus euismod dapibus. Aliquam erat volutpat. Nam sed
+                  rhoncus diam. Vestibulum nisl leo, dignissim non placerat ac,
+                  fermentum non leo. Morbi lacinia dui ut lacinia hendrerit. Ut
+                  rutrum odio id mauris laoreet condimentum. Nullam leo purus,
+                  interdum vel accumsan at, egestas ac tortor.
+                </p>
+              </div>
+            </aside>
+
+            <article>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://via.placeholder.com/600x250"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="/">Copyright ecc</a></li>
+            <li><a href="/features">xxxx</a></li>
+            <li><a href="/pricing">yyyy</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
 </html>
