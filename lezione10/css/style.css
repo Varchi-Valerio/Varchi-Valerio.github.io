@@ -1,0 +1,71 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body *+* {
+    margin-top: 1.5em;
+    background: #bbb;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin-bottom: 1.5em;
+}
+
+header,
+footer {
+    background-color: blueviolet;
+    padding: 1.5em;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    background: #fff;
+    padding: 0 1.5em 1.5em 1.5em;
+}
+
+header,
+footer,
+main {
+    border-radius: 5px;
+}
+
+article {
+    background-color: #dedede;
+    padding: 1.5em;
+    float: left;
+    width: 50%; 
+}
+
+article h4 {
+    margin: 0;
+}
+
+/* double container pattern */
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+} 
+
+section::after {
+    display: block;
+    content: " ";
+    clear: both;
+}
+
+/* classes */
+.centergrid {
+    background-color: blueviolet;
+    display: inline-flex;
+}
