@@ -5,7 +5,37 @@
 *,
 ::after,
 ::before {
-    box-sizing: inherit;
+    box-sizing: in/*nav */
+.header-nav {
+    display: flex;
+    padding: .5em;
+    list-style-type: none;
+    background-color:white;
+    border-radius: .2em;
+}
+
+
+.header-nav > li {
+    margin-top: 0;
+}
+
+
+.header-nav > li > a {
+    display: block;
+    padding: .5em 1em;
+    background-color: #0a5278;
+    color: white;
+    text-decoration: none;
+}
+
+
+.header-nav > li:nth-child(1n+2) {
+    margin-left: .5em;
+}
+
+.header-nav > li.nav-right {
+    margin-left: auto;
+}rit;
 }
 
 body *+* {
@@ -20,14 +50,9 @@ header {
 
 header,
 footer {
-    background-color: blueviolet;
+    background-color: grey;
     padding: 1.5em;
     color: #fff;
-    text-align: center;
-    margin: 0 auto;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 main {
@@ -40,8 +65,6 @@ footer,
 main {
     border-radius: 5px;
 }
-
-
 
 article {
     background-color: #dedede;
@@ -66,37 +89,50 @@ section::after {
     clear: both;
 }
 
-/* classes */
-.centergrid {
-    background-color: blueviolet;
-    display: inline-flex;
+
+
+
+/*nav */
+.header-nav {
+    display: flex;
+    padding: .5em;
+    list-style-type: none;
+    background-color:#0a5278;
+    }
+
+
+.header-nav > li {
+    margin-top: 0;
 }
 
-footer {
-    width: 100%;
-    background-color: #FFFFFF;
-    padding: 20px 0;
-    text-align: center;
-}
 
-.footer-nav {
-    width: 100%;
-    margin-bottom: 0; 
-    text-align: center;
-}
-
-.footer-nav ul {
-    display: inline-flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-nav li {
-    padding: 0 10px;
-}
- 
-.footer-nav a {
-    color: #0000FF;
+.header-nav > li > a {
+    display: block;
+    padding: .5em 1em;
+    background-color: white;
+    color: #0a5278;
     text-decoration: none;
+   }
+
+
+.header-nav > li:nth-child(1n+2) {
+    margin-left: .5em;
 }
+
+.header-nav > li.nav-right {
+    margin-left: auto;
+}
+
+/* aside */
+.centergrid {
+    background-color: #0a5278;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .first { grid-area: 1 / 1 / 2 / 2; }
+    .second { grid-area: 1 / 2 / 2 / 3; }
+    .third { grid-area: 1 / 3 / 2 / 4; }
