@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio div span inline</title>
+
+    <style>
+        p {
+            color: #26b72b;
+            background-color: rgb(237, 246, 246);
+            padding: 5px;
+            border: 1px solid rgb(168, 242, 9);
+        }
+
+        .warning {
+            border: 10px ridge #f00;
+            background-color: #ff0;
+            padding: .5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .warning img {
+            width: 200px;
+       
+        }
+
+        .warning p {
+            font: small-caps bold 1.2rem sans-serif;
+            text-align: center;
+        }
+
+        .ombra {
+            width: 15em;
+            border: 1px solid #333;
+            box-shadow: 8px 8px 5px rgb(68, 68, 68);
+            padding: 8px 12px;
+            background-image: linear-gradient(180deg, #fff, #ddd 50%, #ccc);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- TO DO
+        h2 colore
+        styles verde con uno span
+        immagine che venga visualizzata
+        elemento che abbia applicato ombra
+        h3 con uno style inline
+    -->
+    <h2 class="ombra">Questo è un titolo</h2>
+
+
+    <p><strong style="color: black">Lorem Ipsum</strong> è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum..</p>
+
+    <p style="color: blue">The <code class="ombra">style</code> attribute can override it, though.</p>
+
+    <div class="warning">
+        <img src="assets/frutta.jpg" alt="An intimidating leopard.">
+        <p>La frutta <span style="color:blue">fa</span> bene</p>
+    </div>
+
+</body>
+
+</html>
