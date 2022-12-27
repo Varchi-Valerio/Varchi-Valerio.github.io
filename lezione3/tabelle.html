@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelle</title>
+
+    <style>
+        table,
+        td {
+            border: 1px solid rgb(223, 9, 9);
+        }
+
+        thead,
+        tfoot {
+            background-color: rgb(91, 19, 235);
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
+
+    <!-- TODO
+    1 tabella
+    1 thead intestazione
+    1 tfoot footer
+    1 colspan \ rowspan
+    1 caption
+    1 immagine dentro
+    EXTRA
+    colgroup
+    
+    
+    -->
+    <caption>La mia prima tabella</caption>
     <table>
-        
+        <thead>
+            <tr>
+                <th colspan="2">Intestazione</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>The table body</td>
+                <td>with two columns</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Footer</th>
+            </tr>
+        </tfoot>
     </table>
+    <hr>
+
+    <table>
+        <thead>
+            <tr><th>head</th><th>head</th><th>head</th></tr>
+        </thead>
+        <tbody>
+            <tr><td rowspan="2">double row cell</td><td>cell</td><td>cell</td></tr>
+            <tr><td>cell</td><td>cell</td></tr>
+            <tr><td>cell</td><td>cell</td><td>cell</td></tr>
+        </tbody>
+    </table>
+
 </body>
+
 </html>
