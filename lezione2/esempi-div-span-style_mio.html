@@ -1,17 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio div span inline</title>
+
     <style>
-        p {
-            color: aqua;
-        }
+      p {
+        color: #26b72b;
+        background-color: rgb(237, 246, 246);
+        padding: 5px;
+        border: 1px solid rgb(168, 242, 9);
+      }
+
+      .warning {
+        border: 10px ridge #f00;
+        background-color: #ff0;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .warning img {
+        width: 200px;
+      }
+
+      .warning p {
+        font: small-caps bold 1.2rem sans-serif;
+        text-align: center;
+      }
+
+      .ombra {
+        width: 15em;
+        border: 1px solid #333;
+        box-shadow: 8px 8px 5px rgb(68, 68, 68);
+        padding: 8px 12px;
+        background-image: linear-gradient(180deg, #fff, #ddd 50%, #ccc);
+      }
     </style>
-</head>
-<body>
-    <h2>Titolo</h2>
-</body>
+  </head>
+
+  <body>
+    <!-- TO DO
+        h2 colore
+        styles verde con uno span
+        immagine che venga visualizzata
+        elemento che abbia applicato ombra
+        h3 con uno style inline
+    -->
+    <h2 class="ombra">Questo è un titolo con ombra</h2>
+
+    <h3 class="warning">Questo è un sottotitolo con warning</h3>
+
+    <p style="color: #ff0">Paragrafo</p>
+    <h4 class="warning">ciao</h4>
+    <p>
+      questa immagine è di git hub
+      <img src="assets/github.png" alt="Logo di git hub" />
+    </p>
+
+    <div class="warning">
+      <a href="https://webbin24.com">
+        <img src="assets/github.png" alt="logo" />questo è il logo</a>
+        <p class="warning p">Il logo</p>
+    </div>
+  </body>
 </html>
