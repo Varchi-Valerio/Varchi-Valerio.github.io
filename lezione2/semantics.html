@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Il mio quotidiano online</title>
+
+    <style>
+        nav {
+            border-bottom: 1px solid black;
+        }
+
+        .crumbs ol {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .crumb {
+            display: inline-block;
+        }
+
+        .crumb a::after {
+            display: inline-block;
+            color: #000;
+            content: '*';
+            font-size: 80%;
+            font-weight: bold;
+            padding: 0 3px;
+        }
+
+        nav
+        details {
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            padding: .5em .5em 0;
+        }
+
+        summary {
+            font-weight: bold;
+            margin: -.5em -.5em 0;
+            padding: .5em;
+        }
+
+        details[open] {
+            padding: .5em;
+        }
+
+        details[open] summary {
+            border-bottom: 1px solid #aaa;
+            margin-bottom: .5em;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size:5vw;
+
+        }
+
+        article {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            color: darkblue;
+            margin: 2px;
+            border: 1px solid #000;
+        }
+
+        aside {
+            width: 40%;
+            padding-left: .5rem;
+            margin-left: .5rem;
+            float: right;
+            box-shadow: inset 5px 0 5px -5px #29627e;
+            font-style: italic;
+            color: #29627e;
+        }
+
+        aside>p {
+            margin: .5rem;
+        }
+
+        p {
+            font-family: 'Fira Sans', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- to do
+    - figure da inserire non in header
+    - testi da inserire 
+    - altre parti a piacere
+    - immagine di header
+    -->
+    <header>
+        <nav class="crumb">
+            <ul>
+                <li><a href="#">ITALIA</a></li>
+                <li><a href="#">MONDO</a></li>
+                <li><a href="#">POLITICA</a></li>
+            </ul>
+        </nav>
+        <h1>Musa Newspaper Online</h1>
+        <img src="assets/header.png" alt="header">
+    </header>
+    <section>
+        <header>
+            <h2>Ultimi articoli</h2>
+        </header>
+        <article>
+            <header>
+                <p>La frutta fa bene!</p>
+            </header>
+            <details>
+                <summary>Quanta frutta mangi ogni giorno?</summary>
+            </details>
+            <figure>
+                <img src="assets/frutta.jpg" alt="frutta">
+                <figcaption>Frutta</figcaption>
+            </figure>
+            <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.</p>
+            <time>2013-12-28</time>
+        </article>
+
+        <article>
+            <header>
+                <p>News dalla rete</p>
+            </header>
+            <details>
+                <summary>Lo sapevi?</summary>
+            </details>
+            <figure>
+                <img src="assets/immagine.png">
+                <figcaption>Frutta</figcaption>
+            </figure>
+            <p>Cras feugiat egestas euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus placerat felis nec orci porta convallis. Donec mollis dolor nec dui ultricies luctus. Sed suscipit mi ut arcu euismod faucibus. Aliquam et tristique neque, non lobortis odio. Nulla semper odio a mauris venenatis porttitor. In vulputate ac ipsum eget eleifend. Vivamus et hendrerit libero, sed tempus purus. Duis tristique nisl quis sapien tempus, vel semper ex dictum. Etiam tortor tortor, dictum et tincidunt nec, lobortis nec diam. Praesent in tincidunt lacus. Suspendisse pellentesque, erat in maximus tincidunt, ex quam vulputate quam, at blandit ex enim sit amet ex. Proin elit risus, venenatis sed nibh rhoncus, dignissim commodo turpis. Quisque elementum sapien vel justo lacinia placerat. Proin varius in nibh sed dapibus.</p>
+            <time>2013-12-28</time>
+        </article>
+        <footer>
+            Tutti i diritti riservati
+        </footer>
+    </section>
+    <aside>
+        <p>prof. Mario Rossi</p>
+    </aside>
+    <footer>
+        Seguici sui social...
+    </footer>
+</body>
+
+</html>
