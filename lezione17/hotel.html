@@ -52,17 +52,21 @@
             var albergo = new Object();
             //proprietà
             albergo.name = "Hotel Musa";
-            albergo.stanze = 3;
-            albergo.occupate = 0;
+            albergo.stanze = 5;
+            albergo.occupate = 3;
             albergo.stanzaVerde = false;
             albergo.stanzaAvorio = false;
             albergo.stanzaArancione = false;
+            albergo.stanzaRosa = false;
+            albergo.stanzaRossa = false;
             //metodo    
             albergo.disponibilita = function () {
                 let i = 0;
                 if (this.stanzaVerde) i++;
                 if (this.stanzaAvorio) i++;
                 if (this.stanzaArancione) i++;
+                if (this.stanzaRosa) i++;
+                if (this.stanzaRossa) i++;
                 this.occupate = i;
                 return (this.stanze - this.occupate);
             };
@@ -101,6 +105,12 @@
         <input type="radio" name='stanza' value="stanzaAvorio" id="avorio" class="radio" />
         <label for="arancione">Stanza Arancione</label>
         <input type="radio" name='stanza' value="stanzaArancione" id="arancione" class="radio" />
+        <input type="button" value="Prenota" id="prenota" />
+        <label for="Rosa">Stanza Rosa</label>
+        <input type="radio" name='stanza' value="stanzaRosa" id="Rosa" class="radio" />
+        <input type="button" value="Prenota" id="prenota" />
+        <label for="Rossa">Stanza Rossa</label>
+        <input type="radio" name='stanza' value="stanzaRossa" id="Rossa" class="radio" />
         <input type="button" value="Prenota" id="prenota" />
     </fieldset>
 </body>
