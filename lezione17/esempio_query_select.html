@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>querySelector() Demo</title>
+</head>
+
+<body>
+    <h1>Query Selector</h1>
+    <h2>Learning Query selector method</h2>
+    <p id="scaler" class="InterviewBit">I learn on scaler academy</p>
+    <a href="#" target="_blank"> Link </a>
+    <p class="myclass">Mia classe</p>
+    <input type="text" value="Scaler_topics">
+
+    <script>
+        let element = document.querySelector('h2');
+        let elementPid = document.querySelector('#scaler');
+        let elementPclass = document.querySelector('.myclass');
+
+        console.log(element);
+        console.log (elementPid);
+        console.log (elementPclass);
+    </script>
+</body>
+
+</html>
