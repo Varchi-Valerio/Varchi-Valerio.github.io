@@ -14,22 +14,49 @@
             //proprietà
             nome: "Mario",
             cognome: "Rossi",
-            indirizzo: ""
+            indirizzo : "Via Garibaldi, 50 - Roma",
+            //Metodi
+            mostraNomeCompleto: function () {
+                return (this.nome + " " + this.cognome);
+            },
+            calcolaCodiceFiscale: function () {
+                return "ksdfjhshk";
+            }
         };
-
-        persona.indirizzo = "Via Garibaldi, 50 - Roma";
 
         delete persona.cognome;
         persona.cognome = "";
+        persona["data di nascita"] = new Date(1970, 6, 14, 5, 4, 4);
+        console.log(persona.mostraNomeCompleto);
+
+
         console.log(persona);
 
 
-        var altraPersona = new Object({
-            nome: "Mario",
-            cognome: "Rossi"
-        });
+        function altraPersona () {
+            this.nome = "";
+            this.cognome = "";
+            this.indirizzo = "";
+            this.email = "";
+            this.mostraNomeCompleto = function() { console.log(this.nome + " " + this.cognome); };
+        };
 
-        console.log(altraPersona);
+        var paoloRossi = new altraPersona();
+        paoloRossi.cognome= "Rossi";
+        paoloRossi.nome = "Paolo";
+        var giuseppeVerdi = new altraPersona();
+        giuseppeVerdi.nome = "Giuseppe";
+        giuseppeVerdi.cognome = "Verdi";
+        giuseppeVerdi.email = "verdi@latosca.com";
+
+        var marioRossi = new altraPersona ("Mario", "Rossi","via roma 15","mail@rossi.com");
+
+        console.log (paoloRossi);
+        console.log (giuseppeVerdi);
+        console.log (marioRossi);
+
+        giuseppeVerdi.mostraNomeCompleto;
+
     </script>
 
 </body>
