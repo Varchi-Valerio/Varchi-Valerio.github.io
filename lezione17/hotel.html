@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <style>
+        body {
+            width: 600px;
+            margin: 0 auto;
+            padding: 0;
+            font-size: 1em;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        fieldset {
+            border-radius: 5px;
+            border: 1px solid #000;
+        }
+
+        fieldset:nth-child(2) {
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        label {
+            width: 150px;
+            display: inline-block;
+        }
+
+        #prenota {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            //carica in memoria le variabili del primo blocco
+            var nome = document.querySelector("#nome");
+            var nStanze = document.querySelector("#stanze");
+            var occupateStanze = document.querySelector("#occupate");
+            var disponibiliStanze = document.querySelector("#disponibili");
+
+            var stanze = document.getElementsByClassName("radio");
+            var prenota = document.querySelector("#prenota");
+
+            //inizializza oggetto albergo
+            var albergo = new Object();
+            //proprietà
+            albergo.name = "Hotel Musa";
+            albergo.stanze = 3;
+            albergo.occupate = 0;
+            albergo.stanzaVerde = false;
+            albergo.stanzaAvorio = false;
+            albergo.stanzaArancione = false;
+            //metodo    
+            albergo.disponibilita = function () {
+                let i = 0;
+                if (this.stanzaVerde) i++;
+                if (this.stanzaAvorio) i++;
+                if (this.stanzaArancione) i++;
+                this.occupate = i;
+                return (this.stanze - this.occupate);
+            };
+            nome.textContent = 'Nome struttra: ' + albergo.name;
+            stanze.textContent = 'Numero di stanze: ' + albergo.stanze;
+            //occupateStanze.textContent = 'Stanze occupate: ' + albergo.occupate;
+            //disponibiliStanze.textContent = 'Stanze disponibili: ' + albergo.disponibilita();
+
+            prenota.onclick = function () {
+                for (i = 0; i < stanze.length; i++) {
+                    if (stanze[i].checked) {
+                        var scelta = stanze[i].value;
+                        albergo[scelta] = true;
+                    }
+                }
+                disponibiliStanze.textContent = 'Stanze disponibili: ' + albergo.disponibilita();
+                occupateStanze.textContent = 'Stanze occupate: ' + albergo.occupate;
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Situazione Hotel</legend>
+        <div id="nome"></div>
+        <div id="stanze"></div>
+        <div id="occupate"></div>
+        <div id="disponibili"></div>
+    </fieldset>
+    <fieldset>
+        <legend>Prenotazione Stanze:</legend>
+        <label for="verde">Stanza Verde</label>
+        <input type="radio" name='stanza' value="stanzaVerde" id="verde" class="radio" />
+        <label for="avorio">Stanza Avorio</label>
+        <input type="radio" name='stanza' value="stanzaAvorio" id="avorio" class="radio" />
+        <label for="arancione">Stanza Arancione</label>
+        <input type="radio" name='stanza' value="stanzaArancione" id="arancione" class="radio" />
+        <input type="button" value="Prenota" id="prenota" />
+    </fieldset>
+</body>
+
+</html>
