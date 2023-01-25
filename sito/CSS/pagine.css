@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+  }
+  
+  .header {
+    padding: 15px;
+    text-align: center;
+    background-color: #0085A1;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .input-group {
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    border-radius: 4px;
+  }
+  
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #0085A1;
+    color: #ffffff;
+    font-size: 14px;
+  }
