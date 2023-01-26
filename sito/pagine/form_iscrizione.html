@@ -1,87 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login</title>
-  <link rel="stylesheet" type="text/css" href="../CSS/pagine.css">
+  <title>Sign Up Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../CSS/form-login.css"/>
 </head>
 <body>
-  <div class="header">
-    <h2>Login</h2>
-  </div>
-  <form action="login.php" method="POST"> 
-    <div class="input-group">
-      <label>Username</label>
-      <input type="text" name="username">
+  <header>
+    <div class="banner">
+      <h1>Sign Up</h1>
     </div>
-    <div class="input-group">
-      <label>Password</label>
-      <input type="password" name="password">
-    </div>
-    <div class="input-group">
-      <input type="submit" name="login_submit" value="Login"> 
-    </div>
-  </form>
-  <p>
-    Non sei ancora registrato? <a href="register.php">Registrati qui</a>
-  </p>
-  <footer>
-    <div class="footer">
-      <p>© 2020 Copyright Tutti i diritti riservati</p>
-    </div>
-  </footer>
-</body>
-</html>
-ora fammi la pagina per l'iscrizione
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Registrazione</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <div class="header">
-    <h2>Registrazione</h2>
-  </div>
-  <form action="register.php" method="POST"> 
-    <div class="input-group">
-      <label>Nome</label>
-      <input type="text" name="name">
-    </div>
-    <div class="input-group">
-      <label>Cognome</label>
-      <input type="text" name="surname">
-    </div>
-    <div class="input-group">
-      <label>Email</label>
-      <input type="text" name="email">
-    </div>
-    <div class="input-group">
-      <label>Età</label>
-      <input type="number" name="age">
-    </div>
-    <div class="input-group">
-      <label>Partita IVA</label>
-      <input type="text" name="vat">
-    </div>
-    <div class="input-group">
-      <label>Codice Destinatario</label>
-      <input type="text" name="recipient_code">
-    </div>
-    <div class="input-group">
-      <label>PEC</label>
-      <input type="text" name="pec">
-    </div>
-    <div class="input-group">
-      <label>Indirizzo</label>
-      <input type="text" name="address">
-    </div>
-    <div class="input-group">
-      <label>Indirizzo di Fatturazione (Opzionale)</label>
-      <input type="text" name="billing_address">
-    </div>
-    <div class="input-group">
-      <input type="submit" name="register_submit" value="Registrati"> 
-    </div>
+  </header>
+  <form action="signup.php" method="POST">
+    <label>Name*</label><br>
+    <input type="text" name="name" placeholder="Enter your name" required><br><br>
+    <label>E-mail*</label><br>
+    <input type="email" name="email" placeholder="Enter your e-mail" required><br><br>
+    <label>Password*</label><br>
+    <input type="password" name="password" placeholder="Enter your password" required><br><br>
+    <label>Age</label><br>
+    <input type="number" name="age" placeholder="Enter your age"><br><br>
+    <label>Phone number</label><br>
+    <input type="text" name="phone" placeholder="Enter your phone number"><br><br>
+    <label>Shipping address*</label><br>
+    <input type="text" name="shipping" placeholder="Enter your shipping address" required><br><br>
+    <label>Billing address (if different from Shipping)</label><br>
+    <input type="text" name="billing" placeholder="Enter your billing address"><br><br>
+    <label>VAT number (optional)</label><br>
+    <input type="text" name="vat" placeholder="Enter your VAT number"><br><br>
+    <label>PEC e-mail (optional)</label><br>
+    <input type="text" name="pec" placeholder="Enter your PEC e-mail"><br><br>
+    <label>Codice Destinatario (optional)</label><br>
+    <input type="text" name="codice" placeholder="Enter your Codice Destinatario"><br><br>
+    <input type="checkbox" name="terms" value="agree">I agree to the <a href="termini-e-condizioni.html">Terms and Conditions</a><br><br>
+    <input type="submit" value="Sign up">
   </form>
   <footer>
     <div class="footer">

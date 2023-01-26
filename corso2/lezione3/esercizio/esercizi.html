@@ -1,0 +1,46 @@
+
+<html>
+    <head>
+        <title>Esercizio Matematico</title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+    </head>
+    
+    <body>
+        <h1>Esercizio Matematico</h1>
+        <form action="esercizio.php" method="POST">
+            <label for="eta">Inserisci la tua età: </label>
+            <input type="text" name="eta" id="eta">
+            <input type="submit" value="Invio">
+        </form>
+    
+        <?php
+            // Input: età
+            $eta = $_POST['eta'];
+    
+            // Esercizio: controlla se l'età è sufficiente per guidare
+            if($eta >= 18){
+                // Richiesta: hai la patente?
+                $patente = true;
+                if($patente){
+                    // Output: affermativo con offerta di ferrari
+                    echo "<p>Hai $eta anni e hai la patente! Ti offriamo una Ferrari!</p>";
+                    echo "<script>alert('Clicca qui per vedere la nostra offerta!');</script>";
+                }
+                else{
+                    // Output: affermativo con offerta di bicicletta
+                    echo "<p>Hai $eta anni ma non hai la patente! Ti offriamo una bicicletta o dei pattini!</p>";
+                    echo "<script>alert('Clicca qui per vedere la nostra offerta!');</script>";
+                }
+            }
+            elseif($eta < 18 && $eta > 0){
+                // Output: negativo con offerta di bicicletta o pattini
+                echo "<p>Hai $eta anni, non sei ancora abbastanza grande per guidare. Ti offriamo una bicicletta o dei pattini!</p>";
+                echo "<script>alert('Clicca qui per vedere la nostra offerta!');</script>";
+            }
+            else{
+                // Output: errore
+                echo "<p>Età non valida!</p>";
+            }
+        ?>
+    </body>
+    </html>
