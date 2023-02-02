@@ -16,6 +16,26 @@ body {
     margin: 0;
   }
   
+  /*nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #879BFF;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    font-weight: bold;
+  } */
   nav {
     display: flex;
     justify-content: space-around;
@@ -28,6 +48,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
   }
   
   nav li a {
@@ -86,6 +107,7 @@ body {
   
   footer {
     background-color: #ccc;
+    text-decoration: underline rgb(0, 0, 0);
     padding: 10px;
     border-radius: 4px;
     text-align: center;

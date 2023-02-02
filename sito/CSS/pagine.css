@@ -26,6 +26,7 @@ body {
   .footer {
     padding: 10px;
     text-align: center;
+    text-decoration: underline rgb(0, 0, 0);
     background-color: #0085A1;
     color: #ffffff;
     font-size: 14px;
