@@ -1,433 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <section id="main">
+      <header class="page-header">
+        <h1>Crea un account</h1>
+      </header>
 
-    
-      
-        <header class="page-header">
-          <h1>
-  Crea un account
-</h1>
-        </header>
-      
-    
-
-    
       <div id="content" class="page-content card card-block">
-        
-        
-    
-      
-      <section class="register-form">
-        <p>Hai già un account? <a href="https://just1click.it/login">Invece accedi!</a></p>
-        
-  
-      
-
-<form action="https://just1click.it/login?create_account=1" id="customer-form" class="js-customer-form g-loaded" method="post">
-  <div>
-    
-              
-          
-  <div class="form-group row ">
-    <label class="col-md-3 form-control-label" for="field-id_gender">
-              Titolo sociale
-          </label>
-    <div class="col-md-6 form-control-valign">
-
-      
-        
-                      <label class="radio-inline" for="field-id_gender-1">
-              <span class="custom-radio">
-                <input name="id_gender" id="field-id_gender-1" type="radio" value="1">
-                <span></span>
-              </span>
-              Sig.
-            </label>
-                      <label class="radio-inline" for="field-id_gender-2">
-              <span class="custom-radio">
-                <input name="id_gender" id="field-id_gender-2" type="radio" value="2">
-                <span></span>
-              </span>
-              Sig.ra
-            </label>
-                  
-
-      
-      
-              
-
-    </div>
-
-    <div class="col-md-3 form-control-comment">
-      
-              
-    </div>
-  </div>
-
-
-        
-              
-          
-  <div class="form-group row ">
-    <label class="col-md-3 form-control-label required" for="field-firstname">
-              Nome
-          </label>
-    <div class="col-md-6">
-
-      
-        
-          <input id="field-firstname" class="form-control" name="firstname" type="text" value="" required="">
-                      <span class="form-control-comment">
-              Sono consentite solo lettere e il punto (.), seguito da uno spazio.
-            </span>
-                  
-
-      
-      
-              
-
-    </div>
-
-    <div class="col-md-3 form-control-comment">
-      
-              
-    </div>
-  </div>
-
-
-        
-              
-          
-  <div class="form-group row ">
-    <label class="col-md-3 form-control-label required" for="field-lastname">
-              Cognome
-          </label>
-    <div class="col-md-6">
-
-      
-        
-          <input id="field-lastname" class="form-control" name="lastname" type="text" value="" required="">
-                      <span class="form-control-comment">
-              Sono consentite solo lettere e il punto (.), seguito da uno spazio.
-            </span>
-                  
-
-      
-      
-              
-
-    </div>
-
-    <div class="col-md-3 form-control-comment">
-      
-              
-    </div>
-  </div>
-
-
-        
-              
-          
-  <div class="form-group row ">
-    <label class="col-md-3 form-control-label" for="field-company">
-              Azienda
-          </label>
-    <div class="col-md-6">
-
-      
-        
-          <input id="field-company" class="form-control" name="company" type="text" value="">
-                  
-
-      
-      
-              
-
-    </div>
-
-    <div class="col-md-3 form-control-comment">
-      
-                 Opzionale
-              
-    </div>
-  </div>
-
-
-        
-              
-          
-  <div class="form-group row ">
-    <label class="col-md-3 form-control-label" for="field-siret">
-              Codice fiscale
-          </label>
-    <div class="col-md-6">
-
-      
-        
-          <input id="field-siret" class="form-control" name="siret" type="text" value="">
-                  
-
-      
-      
-              
-
-    </div>
-
-    <div class="col-md-3 form-control-comment">
-      
-                 Opzionale
-              
-    </div>
-  </div>
-
-
-        
-              
-          
-  <div class="form-group row ">
-    <label class="col-md-3 form-control-label required" for="field-email">
-              E-mail
-          </label>
-    <div class="col-md-6">
-
-      
-        
-          <input id="field-email" class="form-control" name="email" type="email" value="" required="">
-                  
-
-      
-      
-              
-
-    </div>
-
-    <div class="col-md-3 form-control-comment">
-      
-              
-    </div>
-  </div>
-
-
-        
-              
-          
-  <div class="form-group row ">
-    <label class="col-md-3 form-control-label required" for="field-password">
-              Password
-          </label>
-    <div class="col-md-6">
-
-      
-        
-          <div class="input-group js-parent-focus">
-            <input id="field-password" class="form-control js-child-focus js-visible-password" name="password" title="Deve avere almeno 5 caratteri" aria-label="La password deve essere composta da almeno 5 caratteri" type="password" value="" pattern=".{5,}" required="">
-            <span class="input-group-btn">
-              <button class="btn" type="button" data-action="show-password" data-text-show="Mostra" data-text-hide="Nascondi">
-                Mostra
-              </button>
-            </span>
-          </div>
-        
-
-      
-      
-              
-
-    </div>
-
-    <div class="col-md-3 form-control-comment">
-      
-              
-    </div>
-  </div>
-
-
-        
-              
-          
-  <div class="form-group row ">
-    <label class="col-md-3 form-control-label" for="field-birthday">
-              Data di nascita
-          </label>
-    <div class="col-md-6">
-
-      
-        
-          <input id="field-birthday" class="form-control" name="birthday" type="text" value="" placeholder="DD/MM/YYYY">
-                      <span class="form-control-comment">
-              (Es.: 31/05/1970)
-            </span>
-                  
-
-      
-      
-              
-
-    </div>
-
-    <div class="col-md-3 form-control-comment">
-      
-                 Opzionale
-              
-    </div>
-  </div>
-
-
-        
-              
-          
-  <div class="form-group row ">
-    <label class="col-md-3 form-control-label" for="field-optin">
-          </label>
-    <div class="col-md-6">
-
-      
-        
-          <span class="custom-checkbox">
-            <label>
-              <input name="optin" type="checkbox" value="1">
-              <span><i class="material-icons rtl-no-flip checkbox-checked"></i></span>
-              Ricevi offerte dai nostri partner
-            </label>
-          </span>
-        
-
-      
-      
-              
-
-    </div>
-
-    <div class="col-md-3 form-control-comment">
-      
-              
-    </div>
-  </div>
-
-
-        
-              
-          
-  <div class="form-group row ">
-    <label class="col-md-3 form-control-label" for="field-newsletter">
-          </label>
-    <div class="col-md-6">
-
-      
-        
-          <span class="custom-checkbox">
-            <label>
-              <input name="newsletter" type="checkbox" value="1">
-              <span><i class="material-icons rtl-no-flip checkbox-checked"></i></span>
-              Iscriviti alla nostra newsletter<br><em>Puoi annullare l'iscrizione in ogni momenti. A questo scopo, cerca le info di contatto nelle note legali, o disattivando in autonomia dalle pagine 
-https://just1click.it/account
-https://just1click.it/module/psgdpr/gdpr</em>
-            </label>
-          </span>
-        
-
-      
-      
-              
-
-    </div>
-
-    <div class="col-md-3 form-control-comment">
-      
-              
-    </div>
-  </div>
-
-
-        
-              
-          
-  <div class="form-group row ">
-    <label class="col-md-3 form-control-label required" for="field-psgdpr">
-          </label>
-    <div class="col-md-6">
-
-      
-        
-          <span class="custom-checkbox">
-            <label>
-              <input name="psgdpr" type="checkbox" value="1" required="">
-              <span><i class="material-icons rtl-no-flip checkbox-checked"></i></span>
-              Accetto i termini e le condizioni e l'informativa sulla privacy
-            </label>
-          </span>
-        
-
-      
-      
-              
-
-    </div>
-
-    <div class="col-md-3 form-control-comment">
-      
-              
-    </div>
-  </div>
-
-
-        
-              
-          
-  
-    <input type="hidden" name="captcha" value="1">
-  
-
-
-        
-            <div class="captcha_register form-group row required register page_authentication ver17">
-            <label for="pa_captcha" class="col-md-3"></label>
-        <div class="pa-captcha-inf col-md-6">
-                    <div id="g-recaptcha-response-2084713646"><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LddZqAhAAAAAHt6IzpklVSjvQMyoUTAJK6FIJyJ&amp;co=aHR0cHM6Ly9qdXN0MWNsaWNrLml0OjQ0Mw..&amp;hl=it&amp;v=5qcenVbrhOy8zihcc2aHOWD4&amp;theme=light&amp;size=invisible&amp;badge=bottomright&amp;cb=heldqotaw44" width="256" height="60" role="presentation" name="a-owi4byqclbh6" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe><input type="hidden" name="g-recaptcha-response" value="03AD1IbLCU7qgdzP3j6U8a-Mx7E1VMhLjcZ3IrgHz-b3CHn_C4H8XILLzJsS5aXZCxzLE9LGxeKSk6QOXM6tsLIQH2mBw71n1Mn9EeKrFfJP26ZJV0rwBlJSyA0J2XtMTir7wCKMuiN1n5u79Vwu4LPzsXMGJRJUE60Wo1cxI5Qht9bPbn_0Nf0UDuOpLvZQefvaobDlVU5m_55x7KH_B8iipcx6q_XsQ9JcAhIxhVUykKwGDfgqTsk1_S7HckXCpWKQa2QWB40OATGTPezBeClgNCPnOMLKonGza89NvfGBzSwkF32RUl8lDiNOnnAymX3e1b-Lj0peC4O7s9hB0FFVIY2YPBToxdLzOI2WEUiwo1UeAgV_WpF9Ql-KAKE-1fIJbgPFSXA114tEn3UeD22zGJovm0kxFuJBxf2C9-w_jI-ZaYVrKFstWeMUKVuUiBNen7VdNXhkiowVUp9nW4iPPoo7Fy1OmjXx_fbpKuf-fZF600izmAghTICXkS6ggfXNV28_0XEZwSllbCCRMs-LC-ceoafkD1tw"></div>
+        <section class="register-form">
+          <p>
+            Hai già un account?
+            <a href="https://just1click.it/login">Invece accedi!</a>
+          </p>
+
+          <form
+            action="https://just1click.it/login?create_account=1"
+            id="customer-form"
+            class="js-customer-form g-loaded"
+            method="post"
+          >
+            <div>
+              <div class="form-group row">
+                <label
+                  class="col-md-3 form-control-label"
+                  for="field-id_gender"
+                >
+                  Titolo sociale
+                </label>
+                <div class="col-md-6 form-control-valign">
+                  <label class="radio-inline" for="field-id_gender-1">
+                    <span class="custom-radio">
+                      <input
+                        name="id_gender"
+                        id="field-id_gender-1"
+                        type="radio"
+                        value="1"
+                      />
+                      <span></span>
+                    </span>
+                    Sig.
+                  </label>
+                  <label class="radio-inline" for="field-id_gender-2">
+                    <span class="custom-radio">
+                      <input
+                        name="id_gender"
+                        id="field-id_gender-2"
+                        type="radio"
+                        value="2"
+                      />
+                      <span></span>
+                    </span>
+                    Sig.ra
+                  </label>
+                </div>
+
+                <div class="col-md-3 form-control-comment"></div>
+              </div>
+
+              <div class="form-group row">
+                <label
+                  class="col-md-3 form-control-label required"
+                  for="field-firstname"
+                >
+                  Nome
+                </label>
+                <div class="col-md-6">
+                  <input
+                    id="field-firstname"
+                    class="form-control"
+                    name="firstname"
+                    type="text"
+                    value=""
+                    required=""
+                  />
+                  <span class="form-control-comment">
+                    Sono consentite solo lettere e il punto (.), seguito da uno
+                    spazio.
+                  </span>
+                </div>
+
+                <div class="col-md-3 form-control-comment"></div>
+              </div>
+
+              <div class="form-group row">
+                <label
+                  class="col-md-3 form-control-label required"
+                  for="field-lastname"
+                >
+                  Cognome
+                </label>
+                <div class="col-md-6">
+                  <input
+                    id="field-lastname"
+                    class="form-control"
+                    name="lastname"
+                    type="text"
+                    value=""
+                    required=""
+                  />
+                  <span class="form-control-comment">
+                    Sono consentite solo lettere e il punto (.), seguito da uno
+                    spazio.
+                  </span>
+                </div>
+
+                <div class="col-md-3 form-control-comment"></div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-3 form-control-label" for="field-company">
+                  Azienda
+                </label>
+                <div class="col-md-6">
+                  <input
+                    id="field-company"
+                    class="form-control"
+                    name="company"
+                    type="text"
+                    value=""
+                  />
+                </div>
+
+                <div class="col-md-3 form-control-comment">Opzionale</div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-3 form-control-label" for="field-siret">
+                  Codice fiscale
+                </label>
+                <div class="col-md-6">
+                  <input
+                    id="field-siret"
+                    class="form-control"
+                    name="siret"
+                    type="text"
+                    value=""
+                  />
+                </div>
+
+                <div class="col-md-3 form-control-comment">Opzionale</div>
+              </div>
+
+              <div class="form-group row">
+                <label
+                  class="col-md-3 form-control-label required"
+                  for="field-email"
+                >
+                  E-mail
+                </label>
+                <div class="col-md-6">
+                  <input
+                    id="field-email"
+                    class="form-control"
+                    name="email"
+                    type="email"
+                    value=""
+                    required=""
+                  />
+                </div>
+
+                <div class="col-md-3 form-control-comment"></div>
+              </div>
+
+              <div class="form-group row">
+                <label
+                  class="col-md-3 form-control-label required"
+                  for="field-password"
+                >
+                  Password
+                </label>
+                <div class="col-md-6">
+                  <div class="input-group js-parent-focus">
+                    <input
+                      id="field-password"
+                      class="form-control js-child-focus js-visible-password"
+                      name="password"
+                      title="Deve avere almeno 5 caratteri"
+                      aria-label="La password deve essere composta da almeno 5 caratteri"
+                      type="password"
+                      value=""
+                      pattern=".{5,}"
+                      required=""
+                    />
+                    <span class="input-group-btn">
+                      <button
+                        class="btn"
+                        type="button"
+                        data-action="show-password"
+                        data-text-show="Mostra"
+                        data-text-hide="Nascondi"
+                      >
+                        Mostra
+                      </button>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="col-md-3 form-control-comment"></div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-3 form-control-label" for="field-birthday">
+                  Data di nascita
+                </label>
+                <div class="col-md-6">
+                  <input
+                    id="field-birthday"
+                    class="form-control"
+                    name="birthday"
+                    type="text"
+                    value=""
+                    placeholder="DD/MM/YYYY"
+                  />
+                  <span class="form-control-comment"> (Es.: 31/05/1970) </span>
+                </div>
+
+                <div class="col-md-3 form-control-comment">Opzionale</div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-3 form-control-label" for="field-optin">
+                </label>
+                <div class="col-md-6">
+                  <span class="custom-checkbox">
+                    <label>
+                      <input name="optin" type="checkbox" value="1" />
+                      <span
+                        ><i class="material-icons rtl-no-flip checkbox-checked"
+                          ></i
+                        ></span
+                      >
+                      Ricevi offerte dai nostri partner
+                    </label>
+                  </span>
+                </div>
+
+                <div class="col-md-3 form-control-comment"></div>
+              </div>
+
+              <div class="form-group row">
+                <label
+                  class="col-md-3 form-control-label"
+                  for="field-newsletter"
+                >
+                </label>
+                <div class="col-md-6">
+                  <span class="custom-checkbox">
+                    <label>
+                      <input name="newsletter" type="checkbox" value="1" />
+                      <span
+                        ><i class="material-icons rtl-no-flip checkbox-checked"
+                          ></i
+                        ></span
+                      >
+                      Iscriviti alla nostra newsletter<br /><em
+                        >Puoi annullare l'iscrizione in ogni momenti. A questo
+                        scopo, cerca le info di contatto nelle note legali, o
+                        disattivando in autonomia dalle pagine
+                        https://just1click.it/account
+                        https://just1click.it/module/psgdpr/gdpr</em
+                      >
+                    </label>
+                  </span>
+                </div>
+
+                <div class="col-md-3 form-control-comment"></div>
+              </div>
+
+              <div class="form-group row">
+                <label
+                  class="col-md-3 form-control-label required"
+                  for="field-psgdpr"
+                >
+                </label>
+                <div class="col-md-6">
+                  <span class="custom-checkbox">
+                    <label>
+                      <input
+                        name="psgdpr"
+                        type="checkbox"
+                        value="1"
+                        required=""
+                      />
+                      <span
+                        ><i class="material-icons rtl-no-flip checkbox-checked"
+                          ></i
+                        ></span
+                      >
+                      Accetto i termini e le condizioni e l'informativa sulla
+                      privacy
+                    </label>
+                  </span>
+                </div>
+
+                <div class="col-md-3 form-control-comment"></div>
+              </div>
+
+              <input type="hidden" name="captcha" value="1" />
+
+              <div
+                class="captcha_register form-group row required register page_authentication ver17"
+              >
+                <label for="pa_captcha" class="col-md-3"></label>
+                <div class="pa-captcha-inf col-md-6">
+                  <div id="g-recaptcha-response-2084713646">
+                    <div
+                      class="grecaptcha-badge"
+                      data-style="bottomright"
+                      style="
+                        width: 256px;
+                        height: 60px;
+                        display: block;
+                        transition: right 0.3s ease 0s;
+                        position: fixed;
+                        bottom: 14px;
+                        right: -186px;
+                        box-shadow: gray 0px 0px 5px;
+                        border-radius: 2px;
+                        overflow: hidden;
+                      "
+                    >
+                      <div class="grecaptcha-logo">
+                        <iframe
+                          title="reCAPTCHA"
+                          src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LddZqAhAAAAAHt6IzpklVSjvQMyoUTAJK6FIJyJ&amp;co=aHR0cHM6Ly9qdXN0MWNsaWNrLml0OjQ0Mw..&amp;hl=it&amp;v=5qcenVbrhOy8zihcc2aHOWD4&amp;theme=light&amp;size=invisible&amp;badge=bottomright&amp;cb=heldqotaw44"
+                          width="256"
+                          height="60"
+                          role="presentation"
+                          name="a-owi4byqclbh6"
+                          frameborder="0"
+                          scrolling="no"
+                          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                        ></iframe>
+                      </div>
+                      <div class="grecaptcha-error"></div>
+                      <textarea
+                        id="g-recaptcha-response"
+                        name="g-recaptcha-response"
+                        class="g-recaptcha-response"
+                        style="
+                          width: 250px;
+                          height: 40px;
+                          border: 1px solid rgb(193, 193, 193);
+                          margin: 10px 25px;
+                          padding: 0px;
+                          resize: none;
+                          display: none;
+                        "
+                      ></textarea>
+                    </div>
+                    <iframe style="display: none"></iframe
+                    ><input
+                      type="hidden"
+                      name="g-recaptcha-response"
+                      value="03AD1IbLCU7qgdzP3j6U8a-Mx7E1VMhLjcZ3IrgHz-b3CHn_C4H8XILLzJsS5aXZCxzLE9LGxeKSk6QOXM6tsLIQH2mBw71n1Mn9EeKrFfJP26ZJV0rwBlJSyA0J2XtMTir7wCKMuiN1n5u79Vwu4LPzsXMGJRJUE60Wo1cxI5Qht9bPbn_0Nf0UDuOpLvZQefvaobDlVU5m_55x7KH_B8iipcx6q_XsQ9JcAhIxhVUykKwGDfgqTsk1_S7HckXCpWKQa2QWB40OATGTPezBeClgNCPnOMLKonGza89NvfGBzSwkF32RUl8lDiNOnnAymX3e1b-Lj0peC4O7s9hB0FFVIY2YPBToxdLzOI2WEUiwo1UeAgV_WpF9Ql-KAKE-1fIJbgPFSXA114tEn3UeD22zGJovm0kxFuJBxf2C9-w_jI-ZaYVrKFstWeMUKVuUiBNen7VdNXhkiowVUp9nW4iPPoo7Fy1OmjXx_fbpKuf-fZF600izmAghTICXkS6ggfXNV28_0XEZwSllbCCRMs-LC-ceoafkD1tw"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3 form-control-comment"></div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 form-control-label" for="referral_code"
+                  >Codice di riferimento</label
+                >
+                <div class="col-md-6">
+                  <input
+                    class="validate account_input form-control"
+                    data-validate="isText"
+                    type="text"
+                    id="referral_code"
+                    name="referral_code"
+                  />
+                </div>
+              </div>
             </div>
-    <div class="col-md-3 form-control-comment"></div></div><div class="form-group row">
-        <label class="col-md-3 form-control-label" for="referral_code">Codice di riferimento</label>
-        <div class="col-md-6"><input class="validate account_input form-control" data-validate="isText" type="text" id="referral_code" name="referral_code"></div>
-</div>
-    
-  </div>
 
-  
-    <footer class="form-footer clearfix">
-      <input type="hidden" name="submitCreate" value="1">
-      
-        <button class="btn btn-primary form-control-submit float-xs-right" data-link-action="save-customer" type="submit">
-          Salva
-        </button>
-      
-    </footer>
-  
+            <footer class="form-footer clearfix">
+              <input type="hidden" name="submitCreate" value="1" />
 
-</form>
-
-
-      </section>
-    
-
+              <button
+                class="btn btn-primary form-control-submit float-xs-right"
+                data-link-action="save-customer"
+                type="submit"
+              >
+                Salva
+              </button>
+            </footer>
+          </form>
+        </section>
       </div>
-    
 
-    
       <footer class="page-footer">
-        
-          <!-- Footer content -->
-        
+        <!-- Footer content -->
       </footer>
-    
-
-  </section>
-</body>
+    </section>
+  </body>
 </html>
