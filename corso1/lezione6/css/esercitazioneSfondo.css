@@ -1,0 +1,10 @@
+p {
+    border: 0.8em rgb(0, 0, 0);
+    border-style: dotted double;
+    margin: 1em 0;
+    padding: 1.4em;
+    font: 900 1.2em sans-serif;
+    text-decoration: underline;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+  }

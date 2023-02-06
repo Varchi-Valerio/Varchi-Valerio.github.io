@@ -1,0 +1,23 @@
+.primo {
+    block-size: 20px;
+    background-color: blue;
+ }
+
+ div {
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    background-image: url(img/crema-corpo-nougat-cocosolis-nougat-250-ml.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+ .art{
+   width: 200px;
+   height: 200px;
+   background-color: yellow;
+   background-image: url(img/crema-corpo-nougat-cocosolis-nougat-250-ml.jpg);
+   box-sizing: content-box;
+   color: aqua;
+   
+ }

@@ -1,0 +1,25 @@
+p {
+    border: 0.8em rgb(52, 51, 53);
+    border-style: dotted double;
+    margin: 1em 0;
+    padding: 1.4em;
+    background: linear-gradient(60deg, rgb(202, 191, 191), rgb(212, 212, 190), rgb(231, 205, 205), rgb(230, 230, 140), rgb(228, 173, 173));
+    font: 900 1.2em sans-serif;
+    text-decoration: underline;
+  }
+  
+  .border-box {
+    background-clip: border-box;
+  }
+  .padding-box {
+    background-clip: padding-box;
+  }
+  .content-box {
+    background-clip: content-box;
+  }
+  
+  .text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0.2);
+  }
