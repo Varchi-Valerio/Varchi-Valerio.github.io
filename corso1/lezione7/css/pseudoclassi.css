@@ -1,0 +1,54 @@
+/*class */
+.anylinks a:any-link {
+  border: 1px solid blue;
+  color: orange;
+}
+
+/* WebKit browsers */
+.anylinks a:-webkit-any-link {
+  border: 1px solid blue;
+  color: orange;
+}
+
+.onlylinks {
+  background: gold;
+  color: green;
+}
+
+hr {
+  border: 2px solid rgb(192, 192, 212);
+}
+
+.linea {
+  border: 2px solid blue;
+  border-style: double;
+}
+
+.onlylinks a:visited {
+  background-color: yellow;
+  border-color: hotpink;
+  color: hotpink;
+}
+
+.onlylinks a:hover {
+  color: rgb(59, 204, 14);
+}
+
+/*internalTarget*/
+
+.internalTarget p:target {
+  background-color: gold;
+}
+
+/* Add a pseudo-element inside the target element */
+.internalTarget p:target::before {
+  font: 70% sans-serif;
+  content: "►";
+  color: limegreen;
+  margin-right: 0.25em;
+}
+
+/* Style italic elements within the target element */
+.internalTarget p:target i {
+  color: red;
+}
