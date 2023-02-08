@@ -1,0 +1,59 @@
+body {
+    box-sizing: content-box;
+    background-color: rgb(165, 164, 162);
+    text-align: center;
+}
+
+main {
+    box-sizing: content-box;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    box-sizing: content-box;
+    float: right;
+    margin: 2%;
+    margin-top: ;
+    margin-left: ;
+    margin-bottom: ;
+    margin-right: 20%;
+    width: 50px;
+}
+
+header {
+    box-sizing: content-box;
+    background-color: rgb(179, 142, 142);
+    text-align: center;
+    
+}
+
+footer {
+    box-sizing: content-box;
+    background-color: rgb(114, 114, 114);
+    text-align: center;
+
+    
+}
+
+ol {
+    box-sizing: content-box;
+    text-align: center;
+    width: 80%;
+    padding: 0%;
+    margin: 5%;
+    
+}
+
+li {
+    box-sizing: content-box;
+    text-align: center;
+    width: 30%;
+    padding: 0%;
+    margin: 2%;
+    margin-left: 40%;
+    margin-bottom: ;
+    margin-right: ;
+}

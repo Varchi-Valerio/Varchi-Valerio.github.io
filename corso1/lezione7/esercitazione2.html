@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Debugging CSS</title>
+    <link rel="stylesheet" href="css/esercitazione2.css">
+    <!-- non duplicate stili, tag -->
+</head>
+
+<body>
+    <header>
+        <!-- colore diverso dal footer-->
+        <h1>Benvenuto sul nostro sito</h1>
+    </header>
+    <main>
+        <h2>Chi siamo</h2>
+        <!--
+        TODO 
+        - link interni target (almeno 2: contattacci, dove siamo)
+        - form completo coi colori focus e quando sbagli
+        - first letter in maiuscolo
+      -->
+        <!-- cambiare immagine una immagina e vostra scelta-->
+        <img src="https://static2-viaggi.corriereobjects.it/wp-content/uploads/2021/01/iata-travel-pass-passaporto-sanitario-per-volare-in-aereo-1080x720.jpg?v=419953"
+            alt="aereo">
+
+        <!-- Modificare il testo-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+            dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
+            Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales
+            ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In
+            scelerisque sem at dolor.</p>
+
+        <form class="formclass">
+            <p>Iscriviti alla nostra newsletter</p>
+            <label>Nome completo: 
+            <input name="firstName" type="text"></label>
+            <label>E-mail: <input name="mail" type="email"></label>
+            <label for="password">Scegli la password (min. 8 caratteri):</label>
+            <input type="password" id="password" name="password"  required="required">
+            <label for="passwordConfirm"> Conferma la password :</label>
+            <input type="password" id="passwordCfr" name="passwordCfr" minlength="8"  required="required">
+            <input name="scopri" type="button" value="Scopri">
+        </form>
+    </main>
+
+    <footer>
+        <!-- colore diverso dal header ma alto la metà-->
+        <p>&copy;1978 Chris' brain</p>
+    </footer>
+</body>
+
+</html>

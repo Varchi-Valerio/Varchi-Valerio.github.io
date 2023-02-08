@@ -1,0 +1,42 @@
+div,
+select {
+  margin: 8px;
+}
+
+/* Labels for checked inputs */
+input:checked + label {
+  color: red;
+}
+
+/* Radio element, when checked */
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+/* Checkbox element, when checked */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
+/* Option elements, when selected */
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
+
+article {
+    box-sizing: border-box;
+    background-color: blue;
+    margin: 200px;
+    padding: 10px;
+    width: 200px;
+}
+
+.checkedclass {
+    box-sizing: border-box;
+    background-color: rgb(232, 232, 245);
+    margin: 10px;
+    padding: 2px;
+    width: 100px;
+}
+

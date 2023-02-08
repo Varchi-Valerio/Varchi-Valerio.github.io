@@ -1,0 +1,80 @@
+/* General styles */
+
+body {
+    font-family: "Helvetica neue", Arial, "sans serif";
+    font-size: 10px;
+    width: 80em;
+    margin: 0 auto;
+  }
+  
+  /* Typography */
+  h1 {
+    font-size: 4em;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 3.2em;
+  }
+  
+  p,
+  li {
+    font-size: 1.7em;
+    line-height: 2;
+  }
+  
+  img {
+    margin: 1.2em 2em;
+    width: 500px;
+    float: right;
+  }
+  
+  label {
+    display: block;
+    margin-top: 2em;
+    margin-left: 2em;
+    padding-top: 2em;
+    font-size: 1.5em;
+  }
+  
+  input:valid {
+    display: block;
+    background-color: whitesmoke;
+    border: none;
+    outline: 2px solid deepskyblue;
+    border-radius: 5px;
+    accent-color: gold;
+    position: relative;
+  }
+  
+  input:invalid {
+    display: block;
+    background-color: red;
+  }
+  
+  /*+++ more specific section styles +++*/
+  /* header and footer */
+  header {
+    background-color: yellowgreen;
+    height: 10em;
+    padding: 2em;
+  }
+  
+  footer {
+    background-color: aqua;
+    height: 5em;
+    padding: 2em;
+  }
+  
+  /* main content */
+  main {
+    padding: 2em;
+  }
+  
+  /* formclass */
+  .formclass {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+  }
+  

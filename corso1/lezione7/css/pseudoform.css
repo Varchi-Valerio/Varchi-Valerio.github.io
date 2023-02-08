@@ -1,0 +1,46 @@
+form {
+    box-sizing: content-box;
+    background-color: brown;
+    color: aliceblue;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+ h1 p {
+    display: none;
+    background-color: yellow;
+    color: black;
+    padding: 20px;
+    }
+
+h1:hover p {
+    display: block;
+}
+
+.divs {
+    box-sizing: content-box;
+    background-color: rgb(179, 171, 171);
+    color: rgb(4, 6, 7);
+    margin: auto;
+    text-align: center;
+}
+
+ a {
+    display: none;
+    background-color: rgb(72, 6, 253);
+    color: black;
+    padding: 2px;
+}
+ 
+label:hover a {
+    display: block;
+}
+
+input:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checked pseudo classe</title>
+    <link rel="stylesheet" href="css/checked.css" />
+  </head>
+  <body>
+    <article>
+      <div>
+        <input type="radio" name="my-input" id="yes" value="yes" />
+        <label class="checkedclass" for="yes">Yes</label>
+
+        <input type="radio" name="my-input" id="no" value="no" />
+        <label class="checkedclass" for="no">No</label>
+      </div>
+
+      <div class="checkedclass">
+        <input type="checkbox" name="my-checkbox" id="opt-in" />
+        <label for="opt-in">Check me!</label>
+      </div>
+
+      <select name="my-select" id="fruit">
+        <option value="opt1">Apples</option>
+        <option value="opt2">Grapes</option>
+        <option value="opt3">Pears</option>
+      </select>
+    </article>
+  </body>
+</html>

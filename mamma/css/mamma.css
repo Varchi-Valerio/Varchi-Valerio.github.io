@@ -1,0 +1,15 @@
+table, th, td {
+    width: 80%;
+    border: 2px solid black;
+    margin: 10%;
+}
+body {
+    box-sizing: content-box;
+    background-color: rgb(166, 167, 168);
+    text-align: center;
+}
+
+hr {
+    background-color: blue;
+    color: red;
+}
