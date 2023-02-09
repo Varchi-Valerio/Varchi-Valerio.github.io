@@ -1,0 +1,7 @@
+div {
+    box-sizing: content-box;
+    background-color: blanchedalmond;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
