@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>Comunica con ChatGPT</h1>
+    <form>
+      <label for="input">Inserisci il tuo messaggio:</label><br><br>
+      <textarea id="input" rows="4" cols="50"></textarea><br><br>
+      <button id="submit">Invia</button>
+    </form>
+    <br><br>
+    <h2>Risposta di ChatGPT:</h2>
+    <p id="response"></p>
+    <script>
+      $("#submit").click(function() {
+        var input = $("#input").val();
+        $.ajax({
+          type: "POST",
+          url: "https://api.openai.com/v1/engines/chatgpt/jobs",
+          data: JSON.stringify({
+            prompt: input,
+            max_tokens: 100,
+            n: 1,
+            stop: "",
+            temperature: 0.5
+          }),
+          headers: {
+            "Authorization": "Bearer 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",
+            "Content-Type": "application/json"
+          },
+          success: function(data) {
+            $("#response").text(data.choices[0].text);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

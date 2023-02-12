@@ -1,87 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Esempio flow</title>
 
     <style>
-        html {
-            font-family: helvetica, arial, sans-serif;
-            letter-spacing: 1px;
-            padding-top: 10px;
-        }
+      html {
+        font-family: helvetica, arial, sans-serif;
+        letter-spacing: 1px;
+        padding-top: 10px;
+      }
 
-        article {
-            background-color: red;
-        }
+      .container1 {
+        background-color: rgb(65, 88, 192);
+      }
 
-        article span {
-            background-color: black;
-            color: white;
-            margin: 1px;
-        }
+      article {
+        background-color: rgb(80, 192, 65);
+      }
 
-        article,
-        span {
-            padding: 10px;
-            border-radius: 7px;
-        }
+      span {
+        background-color: rgb(43, 23, 221);
+        color: rgb(229, 186, 186);
+        margin: 1px;
+      }
 
-        article,
-        div {
-            margin: 20px;
-        }
+      article,
+      span {
+        padding: 10px;
+        border-radius: 7px;
+      }
+
+      article,
+      div {
+        margin: 50px;
+      }
+
+      span {
+        background-color: rgb(199, 15, 15);
+        color: black;
+      }
+
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <article class="container">
-        <span>First</span>
-        <span>Second</span>
-        <span>Third</span>
+      <span>First</span>
+      <span>Second</span>
+      <span>Third</span>
     </article>
 
     <article class="container">
-        <span>First</span>
-        <span>Second</span>
-        <span>Third</span>
+      <span>First</span>
+      <span>Second</span>
+      <span>Third</span>
+    </article>
+
+    <article class="container1">
+      <span>First</span>
+      <span>Second</span>
+      <span>Third</span>
     </article>
 
     <div>
-        <label for="display">Choose a display value:</label>
-        <select id="display">
-            <option selected>block</option>
-            <option>inline</option>
-            <option>inline-block</option>
-            <option>none</option>
-            <option>flex</option>
-            <option>inline-flex</option>
-            <option>grid</option>
-            <option>inline-grid</option>
-            <option>table</option>
-            <option>list-item</option>
-        </select>
+      <label for="display">Choose a display value:</label>
+      <select id="display">
+        <option>block</option>
+        <option>inline</option>
+        <option selected>inline-block</option>
+        <option>none</option>
+        <option>flex</option>
+        <option>inline-flex</option>
+        <option>grid</option>
+        <option>inline-grid</option>
+        <option>table</option>
+        <option>list-item</option>
+      </select>
     </div>
 
     <script>
-        const articles = document.querySelectorAll('.container');
-        const select = document.querySelector('select');
+      const articles = document.querySelectorAll(".container, .container1");
+      const select = document.querySelector("select");
 
-        function updateDisplay() {
-            articles.forEach((article) => {
-                article.style.display = select.value;
-            });
-        }
+      function updateDisplay() {
+        articles.forEach((article) => {
+          article.style.display = select.value;
+        });
+      }
 
-        select.addEventListener('change', updateDisplay);
+      select.addEventListener("change", updateDisplay);
 
-        updateDisplay();
-
+      updateDisplay();
     </script>
-
-</body>
-
+  </body>
 </html>
