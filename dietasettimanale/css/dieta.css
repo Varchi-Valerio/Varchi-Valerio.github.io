@@ -1,0 +1,92 @@
+/* Questo è un commento. I commenti servono per spiegare il codice e non vengono visualizzati nella pagina web. */
+
+/* Questo blocco si applica a tutti gli elementi HTML della pagina web. */
+* {
+    /* Questa proprietà definisce il tipo di font da usare. */
+    font-family: Arial, sans-serif;
+    /* Questa proprietà definisce il colore del testo. */
+    color: black;
+  }
+  
+  /* Questo blocco si applica all'elemento HTML con il tag header. */
+  header {
+    /* Questa proprietà definisce il colore di sfondo dell'elemento. */
+    background-color: lightblue;
+    /* Questa proprietà definisce il margine interno dell'elemento. */
+    padding: 20px;
+    /* Questa proprietà definisce il margine esterno dell'elemento. */
+    margin: 10px;
+  }
+  
+  /* Questo blocco si applica all'elemento HTML con il tag nav. */
+  nav {
+    /* Questa proprietà definisce il colore di sfondo dell'elemento. */
+    background-color: lightgreen;
+    /* Questa proprietà definisce il margine interno dell'elemento. */
+    padding: 10px;
+    /* Questa proprietà definisce il margine esterno dell'elemento. */
+    margin: 10px;
+  }
+  
+  /* Questo blocco si applica a tutti gli elementi HTML con il tag a che sono contenuti nell'elemento HTML con il tag nav. */
+  nav a {
+    /* Questa proprietà definisce il colore del testo dell'elemento. */
+    color: white;
+    /* Questa proprietà definisce il tipo di decorazione del testo dell'elemento. */
+    text-decoration: none;
+    /* Questa proprietà definisce il margine esterno dell'elemento. */
+    margin: 5px;
+  }
+  
+  /* Questo blocco si applica a tutti gli elementi HTML con il tag a che sono contenuti nell'elemento HTML con il tag nav e che hanno l'attributo href uguale a "#prima". */
+  nav a[href="#prima"] {
+    /* Questa proprietà definisce il colore di sfondo dell'elemento. */
+    background-color: red;
+  }
+  
+  /* Questo blocco si applica a tutti gli elementi HTML con il tag a che sono contenuti nell'elemento HTML con il tag nav e che hanno l'attributo href uguale a "#seconda". */
+  nav a[href="#seconda"] {
+    /* Questa proprietà definisce il colore di sfondo dell'elemento. */
+    background-color: orange;
+  }
+  
+  /* Questo blocco si applica a tutti gli elementi HTML con il tag a che sono contenuti nell'elemento HTML con il tag nav e che hanno l'attributo href uguale a "#terza". */
+  nav a[href="#terza"] {
+    /* Questa proprietà definisce il colore di sfondo dell'elemento. */
+    background-color: yellow;
+  }
+  
+  /* Questo blocco si applica a tutti gli elementi HTML con il tag a che sono contenuti nell'elemento HTML con il tag nav e che hanno l'attributo href uguale a "#quarta". */
+  nav a[href="#quarta"] {
+    /* Questa proprietà definisce il colore di sfondo dell'elemento. */
+    background-color: green;
+  }
+  
+  /* Questo blocco si applica all'elemento HTML con il tag main. */
+  main {
+    /* Questa proprietà definisce il margine interno dell'elemento. */
+    padding: 10px;
+    /* Questa proprietà definisce il margine esterno dell'elemento. */
+    margin: 10px;
+  }
+  
+  /* Questo blocco si applica a tutti gli elementi HTML con il tag section che sono contenuti nell'elemento HTML con il tag main. */
+  main section {
+    /* Questa proprietà definisce il colore di sfondo dell'elemento. */
+    background-color: lightgray;
+    /* Questa proprietà definisce il margine interno dell'elemento. */
+    padding: 10px;
+    /* Questa proprietà definisce il margine esterno dell'elemento. */
+    margin: 10px;
+  }
+  /* Questo blocco si applica all'elemento HTML con il tag footer. */
+footer {
+    /* Questa proprietà definisce il colore di sfondo dell'elemento. */
+    background-color: lightblue;
+    /* Questa proprietà definisce il margine interno dell'elemento. */
+    padding: 10px;
+    /* Questa proprietà definisce il margine esterno dell'elemento. */
+    margin: 10px;
+    /* Questa proprietà definisce l'allineamento del testo dell'elemento. */
+    text-align: center;
+  }

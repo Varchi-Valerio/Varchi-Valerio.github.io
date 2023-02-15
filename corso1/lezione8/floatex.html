@@ -1,256 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Floated</title>
-    <br>
-    <meta name="description" content="Creazione siti, Creazione softwer, Programmi, creazione wordpress, creazione siti prestashop">
-    <meta name="keywords" content="siti, web, programmi, prestashop, moduli, wordpress, plugin">
-    <br>
-<link rel="icon" type="image/vnd.microsoft.icon" href="https://avatars.githubusercontent.com/u/119594347?v=4">
-<link rel="shortcut icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/119594347?v=4">
-<br>
-</head>
-<style>
-    /* 1 STEP : box sizing and lobotimized owl */
+    <meta
+      name="description"
+      content="Creazione siti, Creazione softwer, Programmi, creazione wordpress, creazione siti prestashop"
+    />
+    <meta
+      name="keywords"
+      content="siti, web, programmi, prestashop, moduli, wordpress, plugin"
+    />
+    <link
+      rel="icon"
+      type="image/vnd.microsoft.icon"
+      href="https://avatars.githubusercontent.com/u/119594347?v=4"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://avatars.githubusercontent.com/u/119594347?v=4"
+    />
+    <style>
+      /* 1 STEP : box sizing and lobotimized owl */
 
-    :root {
+      :root {
         box-sizing: border-box;
-    }
+      }
 
-    *,
-    ::after,
-    ::before {
+      *,
+      ::after,
+      ::before {
         box-sizing: inherit;
-    }
+      }
 
-    body *+* {
+      body * + * {
         margin-top: 1.5em;
-    }
+      }
 
-    /* 2 STEP : generic styling rules */
+      /* 2 STEP : generic styling rules */
 
-    body {
+      body {
         background: #bbb;
         font-family: Arial, sans-serif;
-    } 
+      }
 
-   header {
+      header {
         margin-bottom: 1.5em;
-    } 
+      }
 
-    header,
-    footer {
+      header,
+      footer {
         background-color: #e1bd09;
         padding: 1.5em;
         color: #fff;
-    }
+      }
 
-    main {
+      main {
         background: #fff;
         padding: 0 1.5em 1.5em 1.5em;
-    }
+      }
 
-    header,
-    footer,
-    main {
+      header,
+      footer,
+      main {
         border-radius: 5px;
-    }
+      }
 
-    article {
+      article {
         background-color: #dedede;
         padding: 1.5em;
-    }
+      }
 
-    article h4 {
+      article h4 {
         margin: 0;
-    }
+      }
 
-    /* 3 STEP : applying float section */
+      /* 3 STEP : applying float section */
 
-    /* double container pattern */
-    .container {
-        max-width: 1080px;
+      /* double container pattern */
+      .container {
+        max-width: 80%;
         margin: 0 auto;
-    }
+      }
 
-    article {
+      article {
         float: left;
         width: 50%;
-    }
+      }
 
-    /* 4 STEP : fixing floating section */
+      /* 4 STEP : fixing floating section */
 
-    section::after {
+      section::after {
         display: block;
         content: " ";
         clear: both;
-    }
+      }
 
-    /* 5 STEP : article margins */
+      /* 5 STEP : article margins */
 
-    article {
+      article {
         margin: 0 1.5em 1.5em 0;
-        width: calc(50% - 1.5em);
-    }
+        width: calc(33% - 1.5em);
+      }
 
-    /*fixes the margins of the edge children*/
-    section {
+      /*fixes the margins of the edge children*/
+      section {
         margin-right: -1.5em;
         margin-bottom: -1.5em;
-    }
+      }
 
-    /* 6 STEP : Fixes collapsing margin of section title */
+      /* 6 STEP : Fixes collapsing margin of section title */
 
-    section::before {
+      section::before {
         display: table;
         content: " ";
-    }
+      }
 
-    /* 7 STEP : grid row clearfix */
+      /* 7 STEP : grid row clearfix */
 
-    .articles> :nth-child(2n+1) {
+      .articles > :nth-child(3n + 1) {
         clear: left;
-    }
+      }
 
-    /* 8 STEP : grid element styling */
+      /* 8 STEP : grid element styling */
 
-    .articles img {
-        float: left;
+      .articles img {
+      /*  float: left;*/
         margin: 0 1.5em 1.5em 0;
-    }
+      }
 
-    .articles .article-body {
+      .articles .article-body {
         overflow: auto;
-    }
-</style>
-
-<body>
+      }
+    </style>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>Floated layout</h1>
-            <a href="https://github.com/Varchi-Valerio">
-                <img class="logo img-fluid" src="https://avatars.githubusercontent.com/u/119594347?v=4" alt="just1click" width="200" height="49">
-              </a>
-              
-        </header>
-        <main>
-            <section>
-                <h2>Floated elements</h2>
-                <div class="articles">
-                    <article>
-                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
-                        <div class="article-body">
-                            <h4>Lorem ipsum</h4>
-                            <p>
-                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
-                                natoque
-                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
-                                lorem.
-                            </p>
-                            <p>
-                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
-                                natoque
-                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
-                                lorem.
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
-                        <div class="article-body">
-                            <h4>Lorem ipsum</h4>
-                            <p>
-                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
-                                natoque
-                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
-                                lorem.
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
-                        <div class="article-body">
-                            <h4>Lorem ipsum</h4>
-                            <p>
-                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
-                                natoque
-                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
-                                lorem.
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
-                        <div class="article-body">
-                            <h4>Lorem ipsum</h4>
-                            <p>
-                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
-                                natoque
-                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
-                                lorem.
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
-                        <div class="article-body">
-                            <h4>Lorem ipsum</h4>
-                            <p>
-                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
-                                natoque
-                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
-                                lorem.
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
-                        <div class="article-body">
-                            <h4>Lorem ipsum</h4>
-                            <p>
-                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
-                                natoque
-                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
-                                lorem.
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
-                        <div class="article-body">
-                            <h4>Lorem ipsum</h4>
-                            <p>
-                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
-                                natoque
-                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
-                                lorem.
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="https://via.placeholder.com/150" alt="img1" class="media-image">
-                        <div class="article-body">
-                            <h4>Lorem ipsum</h4>
-                            <p>
-                                Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat eget laoreet. Orci varius
-                                natoque
-                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec varius
-                                lorem.
-                            </p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <a href="https://github.com/Varchi-Valerio" target="_blank">
-                © 2022 - costruito da Varchi Valerio</a>        
-        </footer>
+      <header>
+        <h1>Floated layout</h1>
+        <a href="https://github.com/Varchi-Valerio">
+          <img
+            class="logo img-fluid"
+            src="https://avatars.githubusercontent.com/u/119594347?v=4"
+            alt="just1click"
+            width="200"
+            height="49"
+          />
+        </a>
+      </header>
+      <main>
+        <section>
+          <h2>Floated elements</h2>
+          <div class="articles">
+            <article>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="img1"
+                class="media-image"
+              />
+              <div class="article-body">
+                <h4>Lorem ipsum</h4>
+                <p>
+                  Sed mattis vitae nisl quis aliquet. Aliquam posuere et erat
+                  eget laoreet. Orci varius natoque penatibus et magnis dis
+                  parturient montes, nascetur ridiculus mus. Morbi nec varius
+                  lorem.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <a href="https://github.com/Varchi-Valerio" target="_blank">
+          © 2022 - costruito da Varchi Valerio</a
+        >
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
