@@ -1,15 +1,19 @@
-from flask import Flask, render_template, request
+from flask import Flask, request
+from transformers import pipeline
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    if request.method == 'POST':
-        user_input = request.form['user_input']
-        bot_output = 'Hello, World!'
-        return render_template('index.html', user_input=user_input, bot_output=bot_output)
-    else:
-        return render_template('index.html')
+@app.route('/')
+def home():
+    return 'Benvenuti nel mio sito!'
+
+@app.route('/chatbot', methods=['POST'])
+def chatbot():
+    data = request.get_json()
+    text = data['text']
+    chatbot = pipeline('conversational', device=0 if torch.cuda.is_available() else -1)
+    response = chatbot(text)[0]['generated_text']
+    return {'response': response}
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
