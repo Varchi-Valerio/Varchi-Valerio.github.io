@@ -1,13 +1,15 @@
 from flask import Flask, render_template, request
-from transformers import pipeline, set_seed
+from transformers import AutoTokenizer, AutoModelForCausalLM
 
 app = Flask(__name__)
-generator = pipeline('text-generation', model='gpt2-medium')
+tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
+model = AutoModelForCausalLM.from_pretrained("EleutherAI/gpt-neo-1.3B")
 
 def generate_response(user_input):
-    set_seed(42)
-    response = generator(user_input, max_length=100, num_return_sequences=1)[0]['generated_text']
-    return response.strip()
+    inputs = tokenizer.encode(user_input, return_tensors="pt")
+    output = model.generate(inputs, max_length=50, do_sample=True)
+    response = tokenizer.decode(output[0], skip_special_tokens=True)
+    return response
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
