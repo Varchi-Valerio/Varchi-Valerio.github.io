@@ -1,0 +1,58 @@
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  /* Stile del form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  /* Stile dell'output */
+  label[for="bot_output"] {
+    font-weight: bold;
+    margin-top: 30px;
+    display: block;
+    text-align: center; /* Aggiungi questa linea */
+  }
+  
+  textarea#bot_output {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
