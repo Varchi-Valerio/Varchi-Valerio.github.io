@@ -1,33 +1,37 @@
 <?php
 
-// Inizializza un array per le risposte preimpostate
-$responses = array();
+// Carichiamo le risposte preimpostate dal file responses.json
+$file = file_get_contents('responses/responses.json');
+$responses = json_decode($file, true);
 
-// Leggi il file JSON con le risposte preimpostate
-$json = file_get_contents('responses/responses.json');
-$responses = json_decode($json, true);
-
-// Verifica se l'utente ha inviato un input
-if (isset($_POST['user_input'])) {
-    $input = $_POST['user_input'];
-    $output = "Le mie risposte sono limitate, devi farmi le domande giuste.";
-
-    // Verifica se esiste una risposta preimpostata per l'input dell'utente
-    foreach ($responses as $key => $value) {
-        if ($key == $input) {
-            $output = $value;
-            break;
-        }
+// Cerca una risposta corrispondente all'input dell'utente
+$found_response = false;
+foreach ($responses as $response) {
+    if ($_POST['user_input'] == $response['user_input']) {
+        $found_response = true;
+        $bot_output = $response['bot_output'];
+        break;
     }
-
-    // Memorizza la conversazione nel file JSON
-    $conversations = array();
-    if (file_exists('data/conversations.json')) {
-        $json = file_get_contents('data/conversations.json');
-        $conversations = json_decode($json, true);
-    }
-    $conversations[] = array('input' => $input, 'output' => $output);
-    file_put_contents('data/conversations.json', json_encode($conversations));
 }
+
+// Se non è stata trovata una risposta corrispondente, restituisce un messaggio di errore
+if (!$found_response) {
+    $bot_output = "Le mie risposte sono limitate, devi farmi le domande giuste";
+}
+
+// Salviamo la conversazione nel file storiadelleconv.json
+$file = file_get_contents('data/storiadelleconv.json');
+$conversations = json_decode($file, true);
+$new_conversation = array(
+    "user_input" => $_POST['user_input'],
+    "bot_output" => $bot_output
+);
+array_push($conversations, $new_conversation);
+$file = fopen('data/storiadelleconv.json', 'w');
+fwrite($file, json_encode($conversations));
+fclose($file);
+
+// Restituiamo la risposta del bot all'utente
+echo $bot_output;
 
 ?>
