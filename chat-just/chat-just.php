@@ -1,7 +1,7 @@
 <?php
 
-// Carichiamo le risposte preimpostate dal file responses.json
-$file = file_get_contents('responses/responses.json');
+// Carichiamo le risposte preimpostate dal file risposte.json
+$file = file_get_contents('risposte.json');
 $responses = json_decode($file, true);
 
 // Cerca una risposta corrispondente all'input dell'utente
@@ -14,20 +14,33 @@ foreach ($responses as $response) {
     }
 }
 
-// Se non è stata trovata una risposta corrispondente, restituisce un messaggio di errore
+// Se non è stata trovata una risposta corrispondente, effettua una richiesta all'API di Wikipedia
 if (!$found_response) {
-    $bot_output = "Le mie risposte sono limitate, devi farmi le domande giuste";
+    $query = urlencode($_POST['user_input']);
+    $url = "https://it.wikipedia.org/w/api.php?action=query&list=search&srsearch=$query&format=json";
+    $data = file_get_contents($url);
+    $wikipedia_response = json_decode($data, true);
+    if (count($wikipedia_response['query']['search']) > 0) {
+        $bot_output = "Secondo Wikipedia, " . $wikipedia_response['query']['search'][0]['snippet'];
+    } else {
+        $bot_output = "Le mie risposte sono limitate, devi farmi le domande giuste";
+    }
 }
+// Rimuoviamo i tag <span class="searchmatch">
+$bot_output = str_replace('<span class="searchmatch">', '', $bot_output);
+$bot_output = str_replace('</span>', '', $bot_output);
+$bot_output = str_replace(' (AFI: [ˈt͡ʃaːo])', '', $bot_output);
+$bot_output = str_replace(' (disambigua)', '', $bot_output);
 
 // Salviamo la conversazione nel file storiadelleconv.json
-$file = file_get_contents('data/storiadelleconv.json');
+$file = file_get_contents('storiadelleconv.json');
 $conversations = json_decode($file, true);
 $new_conversation = array(
     "user_input" => $_POST['user_input'],
     "bot_output" => $bot_output
 );
 array_push($conversations, $new_conversation);
-$file = fopen('data/storiadelleconv.json', 'w');
+$file = fopen('storiadelleconv.json', 'w');
 fwrite($file, json_encode($conversations));
 fclose($file);
 

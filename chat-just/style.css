@@ -2,31 +2,31 @@ h1 {
     font-size: 24px;
     text-align: center;
     margin: 30px 0;
-  }
-  
-  /* Stile del form */
-  form {
+}
+
+/* Stile del form */
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
-  }
-  
-  label {
+}
+
+label {
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  input[type="text"] {
+}
+
+input[type="text"] {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
     width: 80%;
     max-width: 500px;
-  }
-  
-  input[type="submit"] {
+}
+
+input[type="submit"] {
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -35,17 +35,17 @@ h1 {
     cursor: pointer;
     width: 80%;
     max-width: 500px;
-  }
-  
-  /* Stile dell'output */
-  label[for="bot_output"] {
+}
+
+/* Stile dell'output */
+label[for="bot_output"] {
     font-weight: bold;
     margin-top: 30px;
     display: block;
-    text-align: center; /* Aggiungi questa linea */
-  }
-  
-  textarea#bot_output {
+    text-align: center; 
+}
+
+textarea#bot_output {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -55,4 +55,27 @@ h1 {
     margin: 0 auto;
     display: block;
     text-align: center;
-  }
+}
+/* Stile del nav */
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background-color: #333;
+color: #fff;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+margin-right: 20px;
+}
+
+/* Stile del footer */
+footer {
+padding: 20px;
+background-color: #333;
+color: #fff;
+text-align: center;
+}

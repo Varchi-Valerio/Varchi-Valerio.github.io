@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Chat-Just</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <h1>Chat-Just</h1>
+    <label for="bot_output">Output:</label>
+    <textarea id="bot_output" name="bot_output" rows="10" cols="50" readonly=""></textarea>
+    <form action="chat-just.php" method="POST">
+        <label for="user_input">Input:</label>
+        <input type="text" id="user_input" name="user_input" autofocus>
+        <input type="submit" value="Invia">
+    </form>
+	  <script>
+    $(document).ready(function() {
+      $("form").submit(function(e) {
+        e.preventDefault();
+        $.post("chat-just.php", $("form").serialize(), function(data) {
+          $("#bot_output").val(data);
+        });
+      });
+    });
+  </script>
+  </body>
+  <footer>
+    <p>&copy;2023 Chat-Just</p>
+  </footer>
+  </html>
+  
