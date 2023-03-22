@@ -23,7 +23,6 @@ def get_all_files(user, repo, token, path=''):
     url = f"https://api.github.com/repos/{user}/{repo}/contents/{path}"
     headers = {"Authorization": f"token {token}"}
     response = requests.get(url, headers=headers).json()
-    print(response)
     files = []
     for item in response:
         if item['type'] == 'file':
@@ -53,6 +52,6 @@ for file_path in all_files:
     print(f"File: {file_path}\nContent:\n{file_content}\n{'='*80}\n")
 
 # Esempio di utilizzo della funzione ask_codex
-question = "devo creare un modo che salvi chi accetta i cookie nel database, vorrei che creasse direttamente le tabelle come già fa ma che inserisse anche nel database chi accetta i cookie, controlla eventuali errori e dimmi come modificare il progetto"
+question = "Come posso modificare il mio codice Python per migliorare la performance?"
 suggestion = ask_codex(question)
 print(suggestion)
