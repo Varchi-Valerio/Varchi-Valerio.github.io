@@ -4,10 +4,10 @@ import base64
 import requests
 
 # Inserisci il tuo token API di OpenAI
-openai.api_key = "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"
+openai.api_key = ""
 
 # Inserisci il tuo token di accesso personale di GitHub
-GITHUB_TOKEN = "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"
+GITHUB_TOKEN = ""
 
 # Funzione per leggere il contenuto di un file nel tuo repository GitHub
 def read_github_file(user, repo, path, token):
