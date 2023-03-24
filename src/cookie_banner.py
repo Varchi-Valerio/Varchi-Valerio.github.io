@@ -1,1 +1,0 @@
-Il modulo dovrebbe essere installato e funzionare correttamente su PrestaShop 1.7.8.8.
