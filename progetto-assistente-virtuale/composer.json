@@ -1,0 +1,6 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.4",
+        "openai-php/client": "^0.1.0"
+    }
+}

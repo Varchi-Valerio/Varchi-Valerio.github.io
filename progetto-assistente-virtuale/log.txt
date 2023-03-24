@@ -1,0 +1,21 @@
+Input data: {"message":"creare banner cookie per prestashop","openaiApiKey":"zyR55kajd","githubToken":"github_pat_7bfmGEbMrQbYGiMcmK"}
+Input data: {"message":"ciao vorrei creare un nuovo progetto","openaiApiKey":"sk-cOSkay98eojd","githubToken":"github_pat_1yBfEK"}
+Input data: {"message":"ciao vorrei creare un nuovo progetto","openaiApiKey":"sk-cOSNCFJyR55kayNf98eojd","githubToken":"githu1Aele
+{
+    "error": {
+        "message": "The model: `davinci-codex` does not exist",
+        "type": "invalid_request_error" (truncated...)
+
+JSON Response: {"message":null}
+Input data: {"message":"creare banner cookie per prestashop","openaiApiKey":"sk-cOSNlb"}
+Error: Client error: `POST https://api.openai.com/v1/engines/text-davinci-002/completions` resulted in a `400 Bad Request` response:
+{
+  "error": {
+    "message": "Unrecognized request argument supplied: engine",
+    "type": "invalid_request_error",
+    (truncated...)
+
+JSON Response: {"message":null}
+Input data: {"message":"creare banner cookie per prestashop","openaiApiKey":"sk-cOSJEpXazyR55kayNf98eojd","githubToken":"githu2BBVDo0iM"}
+Input data: {"message":"creare banner cookie per prestashop","openaiApiKey":"sk-ccWV0C","githubToken":"github_pa22K"}
+Input data: {"message":"creare banner cookie per prestashop","openaiApiKey":"sBlbkFJEpXazy8eojd","githubToken":"github_pagyK"}
