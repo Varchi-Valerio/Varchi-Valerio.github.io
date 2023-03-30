@@ -1,30 +1,30 @@
 {
-    "initial": [1],
-    "initial_response": "Benvenuti nel sito di presentazione del curriculum di Valerio Varchi! Cosa vuoi sapere sul mio creatore?",
+    "initial": [1, 2, 3, 4],
+    "initial_response": "Benvenuti nel sito di presentazione del curriculum di Valerio Varchi! Cosa vuoi sapere sul mio creatore? Scegli tra queste opzioni: \n1. Istruzione e formazione\n2. Esperienze lavorative\n3. Competenze\n4. Contatti",
     "questions": [
         {
             "id": 1,
             "text": "Istruzione e formazione",
             "response": "Valerio Varchi ha studiato presso l'Istituto Tecnico F.C. Gauss di Roma dove ha conseguito il Diploma di Perito Elettronico nel luglio 2010. Ha successivamente frequentato diversi corsi di formazione in ambito tecnico e commerciale, tra cui il Corso di Acquisizione competenze in: “Il Commercio relativo al Settore Merceologico Alimentare” presso la Beauty Space Academy s.r.l. di Roma, il Laboratorio Didattico di Specializzazione per Manutentore e Installatore Straordinario di Impianti Energetici Alimentati da Fonti Rinnovabili - Indirizzo Solare Fotovoltaico presso La Scuola delle Energie, Agenzia Nazionale per l'Efficienza Energetica -ENEA Casaccia di Roma e il Corso di Professionalizzazione Tecnico Installatore di Pannelli Fotovoltaici presso il CPFP Acilia Industria di Roma.",
-            "next": []
+            "next": [2, 3, 4]
         },
         {
             "id": 2,
             "text": "Esperienze lavorative",
             "response": "Valerio Varchi ha maturato diverse esperienze lavorative, tra cui uno stage come Tecnico Installatore di Pannelli Fotovoltaici presso l'azienda Ioli Impianti s.r.l. di Roma, un impiego come Addetto movimentazione in pista presso l'aeroporto CIA di Roma per conto di Flight Care Italia S.p.A., un apprendistato come Manutentore di strumentazione biomedicale presso Anian s.r.l. di Roma e un impiego come Magazziniere addetto a prodotti diagnostici presso Reax di Roma.",
-            "next": []
+            "next": [1, 3, 4]
         },
         {
             "id": 3,
             "text": "Competenze",
             "response": "Valerio Varchi possiede diverse competenze nel campo dello sviluppo web e della programmazione, tra cui HTML, CSS, JavaScript, PHP e SQL.",
-            "next": []
+            "next": [1, 2, 4]
         },
         {
             "id": 4,
             "text": "Contatti",
             "response": "Puoi contattare Valerio Varchi tramite telefono al numero +39 349 7941361, email all'indirizzo valerio.varchi.roma@gmail.com o tramite il suo profilo LinkedIn all'indirizzo https://www.linkedin.com/in/valerio-varchi-48b7631a2/.",
-            "next": []
+            "next": [1, 2, 3]
         }
     ]
 }
