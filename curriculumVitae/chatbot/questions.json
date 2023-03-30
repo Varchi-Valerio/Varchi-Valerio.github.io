@@ -1,75 +1,30 @@
 {
     "initial": [1],
-    "initial_response": "Benvenuto al nostro sito! In che modo posso esserti utile?",
+    "initial_response": "Benvenuti nel sito di presentazione del curriculum di Valerio Varchi! Cosa vuoi sapere sul mio creatore?",
     "questions": [
         {
             "id": 1,
-            "text": "Assistenza clienti",
-            "response": "Hai scelto l'Assistenza clienti. Scegli tra le seguenti opzioni:",
-            "next": [2, 3, 4]
+            "text": "Istruzione e formazione",
+            "response": "Valerio Varchi ha studiato presso l'Istituto Tecnico F.C. Gauss di Roma dove ha conseguito il Diploma di Perito Elettronico nel luglio 2010. Ha successivamente frequentato diversi corsi di formazione in ambito tecnico e commerciale, tra cui il Corso di Acquisizione competenze in: “Il Commercio relativo al Settore Merceologico Alimentare” presso la Beauty Space Academy s.r.l. di Roma, il Laboratorio Didattico di Specializzazione per Manutentore e Installatore Straordinario di Impianti Energetici Alimentati da Fonti Rinnovabili - Indirizzo Solare Fotovoltaico presso La Scuola delle Energie, Agenzia Nazionale per l'Efficienza Energetica -ENEA Casaccia di Roma e il Corso di Professionalizzazione Tecnico Installatore di Pannelli Fotovoltaici presso il CPFP Acilia Industria di Roma.",
+            "next": []
         },
         {
             "id": 2,
-            "text": "Assistenza post vendita",
-            "response": "Hai scelto l'Assistenza post vendita. Scegli tra le seguenti opzioni:",
-            "next": [5, 6]
+            "text": "Esperienze lavorative",
+            "response": "Valerio Varchi ha maturato diverse esperienze lavorative, tra cui uno stage come Tecnico Installatore di Pannelli Fotovoltaici presso l'azienda Ioli Impianti s.r.l. di Roma, un impiego come Addetto movimentazione in pista presso l'aeroporto CIA di Roma per conto di Flight Care Italia S.p.A., un apprendistato come Manutentore di strumentazione biomedicale presso Anian s.r.l. di Roma e un impiego come Magazziniere addetto a prodotti diagnostici presso Reax di Roma.",
+            "next": []
         },
         {
             "id": 3,
-            "text": "Assistenza amministrativa",
-            "response": "Hai scelto l'Assistenza amministrativa. Scegli tra le seguenti opzioni:",
-            "next": [7, 8]
+            "text": "Competenze",
+            "response": "Valerio Varchi possiede diverse competenze nel campo dello sviluppo web e della programmazione, tra cui HTML, CSS, JavaScript, PHP e SQL.",
+            "next": []
         },
         {
             "id": 4,
-            "text": "Assistenza commerciale",
-            "response": "Hai scelto l'Assistenza commerciale. Scegli tra le seguenti opzioni:",
-            "next": [9, 10]
-        },
-        {
-            "id": 5,
-            "text": "Informazioni sulle spedizioni",
-            "response": "Le spedizioni vengono solitamente effettuate entro 1-3 giorni lavorativi dall'ordine. Puoi monitorare il tuo pacco utilizzando il numero di tracciamento che ti sarà inviato via email al momento della spedizione.",
+            "text": "Contatti",
+            "response": "Puoi contattare Valerio Varchi tramite telefono al numero +39 349 7941361, email all'indirizzo valerio.varchi.roma@gmail.com o tramite il suo profilo LinkedIn all'indirizzo https://www.linkedin.com/in/valerio-varchi-48b7631a2/.",
             "next": []
-        },
-        {
-            "id": 6,
-            "text": "Come effettuare un reso",
-            "response": "Per effettuare un reso, accedi al tuo account sul nostro sito e richiedi un reso nell'area Ordini. Dopo aver ricevuto l'autorizzazione al reso, segui le istruzioni fornite per rispedire il prodotto. I prodotti devono essere restituiti in condizioni pari al nuovo entro 30 giorni dalla data di acquisto.",
-            "next": []
-        },
-        {
-            "id": 7,
-            "text": "Fatturazione",
-            "response": "Se hai bisogno di assistenza riguardo alla fatturazione, contatta il nostro servizio clienti all'indirizzo email support@example.com oppure chiama il numero +39 0123 456789.",
-            "next": []
-        },
-        {
-            "id": 8,
-            "text": "Metodi di pagamento",
-            "response": "Accettiamo diverse forme di pagamento, tra cui carta di credito, PayPal e bonifico bancario. Tutti i pagamenti vengono elaborati attraverso un gateway di pagamento sicuro.",
-            "next": []
-        },
-        {"id": 9,
-        "text": "Promozioni e sconti",
-        "response": "Per conoscere le ultime promozioni e sconti, ti consigliamo di iscriverti alla nostra newsletter e di seguirci sui nostri canali social. Inoltre, è possibile trovare offerte speciali nella sezione 'Promozioni' del nostro sito web.",
-        "next": []
-    },
-    {
-        "id": 10,
-        "text": "Informazioni sui prodotti",
-        "response": "Per informazioni sui prodotti, visita la pagina del prodotto di tuo interesse sul nostro sito. Se hai domande specifiche o richieste di informazioni aggiuntive, non esitare a contattare il nostro servizio clienti all'indirizzo email support@example.com o al numero +39 0123 456789.",
-        "next": []
-    },
-    {
-        "id": 11,
-        "text": "Contatti",
-        "response": "Se hai bisogno di assistenza riguardo alla fatturazione, contatta il nostro servizio clienti all'indirizzo email support@example.com oppure chiama il numero +39 0123 456789. Visita il nostro sito web: https://cranky-wu.94-76-224-33.plesk.page/",
-        "type": "contact",
-        "email": "support@example.com",
-        "phone": "+39 0123 456789",
-        "link": "https://cranky-wu.94-76-224-33.plesk.page/",
-        "next": [1, 2, 3, 4]
-    }
-]
+        }
+    ]
 }
