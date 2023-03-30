@@ -1,0 +1,300 @@
+body {
+  background-color: #f8f8f8;
+  color: #444;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+header {
+    background-color: #336699;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 32px;
+    margin-left: 20px;
+  }
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.timeline-date {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer button {
+  background-color: #336699;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+img {
+    width: 150px;
+    border: 3px solid #336699;
+    border-radius: 50%;
+  }
+
+nav {
+    background-color: #336699;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+ 
+  .cv-table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  .cv-table th, .cv-table td {
+    border: 1px solid black;
+    padding: 10px;
+    width: 33.33%;
+  }
+  
+  .cv-table th {
+    background-color: lightgray;
+  }
+  
+  .cv-table td:first-child {
+    width: 150px;
+  }
+    /* altri stili specifici per l'immagine di WhatsApp  sezione contatti */
+  #Whatsapp_logo {
+    width: 20px;
+    height: 20px;
+   }
+ /* altri stili specifici per l'immagine di WhatsApp */
+  #contatti {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .contact-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-links li {
+    margin: 10px;
+  }
+  
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    width: 100px;
+  }
+  
+  .button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .whatsapp {
+    display: flex;
+    align-items: center;
+  }
+  
+  .whatsapp img {
+    height: 25px;
+    margin-right: 10px;
+  }
+  
+  .contact-form {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-form li {
+    margin: 10px;
+  }
+  
+  .contact-form li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contatti {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .contact-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .contact-links div {
+    display: flex;
+    margin: 0 10px;
+  }
+  
+  .contact-links li {
+    margin: 10px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .whatsapp {
+    display: flex;
+    align-items: center;
+  }
+  
+  .whatsapp img {
+    height: 25px;
+    margin-right: 10px;
+  }
+  
+  .contact-form {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-form li {
+    margin: 10px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .contact-buttons a {
+      margin: 5px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .contact-buttons a {
+      font-size: 0.8em;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .contact-buttons button {
+      width: 80px;
+      margin: 5px;
+      font-size: 12px;
+    }
+  }
