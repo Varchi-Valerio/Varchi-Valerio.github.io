@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-Just</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <a href="https://cranky-wu.94-76-224-33.plesk.page/" target="_blank" rel="noopener">Home</a>
+            </nav>
+        </header>
+        <h1>Chat-Just</h1>
+        <div id="chatbot-container">
+            <label for="bot_output">Output:</label>
+            <textarea id="bot_output" name="bot_output" rows="10" cols="50" readonly></textarea>
+            <br>
+            <div id="typing-indicator" class="typing-indicator">Chat-Just sta scrivendo...</div>
+            <h3>Risposte rapide:</h3>
+            <br>
+            <div id="suggestions"></div>
+            <button id="restart-button">Riavvia Conversazione</button>
+        </div>
+        <script>
+    var questionsData = null;
+
+    function loadQuestions() {
+        $.getJSON("questions.json", function(data) {
+            questionsData = data;
+            typeMessage(data.initial_response, function() {
+                showNextSuggestions(data.initial);
+            });
+        });
+    }
+
+    function typeMessage(message, callback) {
+        $("#typing-indicator").show();
+        $("#bot_output").val('');
+        let i = 0;
+        const typingSpeed = 50;
+
+        function type() {
+            if (i < message.length) {
+                $("#bot_output").val($("#bot_output").val() + message[i]);
+                i++;
+                setTimeout(type, typingSpeed);
+            } else {
+                $("#typing-indicator").hide();
+                callback();
+            }
+        }
+        type();
+    }
+
+    function handleButtonClick(input) {
+        var question = findQuestionByText(input);
+        if (question) {
+            typeMessage(question.response, function() {
+                showNextSuggestions(question.next);
+            });
+        }
+    }
+
+    function findQuestionByText(text) {
+        var foundQuestion = null;
+        $.each(questionsData.questions, function(index, question) {
+            if (question.text === text) {
+                foundQuestion = question;
+                return false;
+            }
+        });
+        return foundQuestion;
+    }
+
+    function showNextSuggestions(nextQuestionIds) {
+        $("#suggestions").empty();
+        $.each(nextQuestionIds, function (index, questionId) {
+            var question = findQuestionById(questionId);
+            if (question) {
+                var button = $('<button>').text(question.text).on('click', function () {
+                    handleButtonClick(question.text);
+                });
+                $("#suggestions").append(button);
+            }
+        });
+    }
+
+    function findQuestionById(id) {
+        var foundQuestion = null;
+        $.each(questionsData.questions, function (index, question) {
+            if (question.id === id) {
+                foundQuestion = question;
+                return false;
+            }
+        });
+        return foundQuestion;
+    }
+
+    function restartConversation() {
+        $("#bot_output").val('');
+        typeMessage(questionsData.initial_response, function() {
+            showNextSuggestions(questionsData.initial);
+        });
+    }
+
+    $(document).ready(function () {
+        $("#typing-indicator").hide();
+        loadQuestions();
+
+        $("#restart-button").on("click", function () {
+            restartConversation();
+        });
+    });
+</script>
+    </main>
+    <footer>
+        <p>&copy;2023 Chat-Just</p>
+    </footer>
+</body>
+
+</html>

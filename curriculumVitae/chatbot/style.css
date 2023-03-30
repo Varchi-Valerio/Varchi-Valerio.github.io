@@ -1,0 +1,78 @@
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+h3 {
+    font-size: 18px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+textarea#bot_output {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.typing-indicator {
+    display: none;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Aggiunte per centrare i pulsanti */
+#suggestions {
+    text-align: center;
+}
+
+#suggestions button {
+    display: inline-block;
+}
