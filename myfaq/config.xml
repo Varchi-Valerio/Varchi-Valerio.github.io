@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>myfaq</name>
+	<displayName><![CDATA[My Faq]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[Modulo per la creazione di una pagina delle FAQ da inserire nell\'header o nel footer]]></description>
+	<author><![CDATA[Varchi]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>
